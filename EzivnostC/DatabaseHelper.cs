@@ -53,7 +53,7 @@ namespace EzivnostC
          /*   var a =deserialize();
             string ConnString = @"Server ="+a["servername"]+"; Database = "+a["database name"]+ ";User Id =" + a["login"]+";Password ="+a["Password"];
             /* return ConnString;*/
-            return "Server = PC421; Database = Ezivnost; User id= sa; Password = student ";
+            return "Server = PC384; Database = Ezivnost; User id= sa; Password = student;Connection Timeout=2";
 
         }
 
@@ -65,16 +65,21 @@ namespace EzivnostC
 
         public static void testConnection()
         {
-            try
+            var c = new SqlConnection();
+            
+                 c = createconnection();
+            if (c != null)
             {
-                SqlConnection c = createconnection();
-                c.Open();
-                c.Close();
-            }
-            catch (Exception e)
-            {
-                throw new Exception("Pripojeni k serveru selhalo, program se ukonci");
-            }
+                try
+                {
+                    c.Open();
+                    c.Close();
+                }
+                catch (Exception e){
+                    throw new Exception("Nelze se pripojit k serveru");
+                } }
+                
+            
         }
 
     }

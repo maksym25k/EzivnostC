@@ -161,6 +161,7 @@ namespace EzivnostC
             dataadresalabel.Text= "...";
             datavydelekzamesiclabel.Text = "...";
             datavydelekzatotoobdobílabel.Text = "...";
+            dataadresalabel.Text = u.adresa;
 
         }
 

@@ -227,6 +227,7 @@ namespace EzivnostC
                     this.ico = int.Parse(reader["ico"].ToString());
                     this.dic = reader["dic"].ToString();
                     bool a = bool.Parse(reader["hlavni_cinnost"].ToString());
+                    this.adresa = reader["adresa"].ToString();
                     if (a)
                     {
                         this.hlavniCinnost = true;
