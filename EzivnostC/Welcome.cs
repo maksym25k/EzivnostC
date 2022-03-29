@@ -8,16 +8,12 @@ namespace EzivnostC
     public partial class Welcome : Form
     {
         User u = new User();
-      
-        
-
-        
+ 
         public Welcome()
         {
             InitializeComponent();
         }
-        FlowLayoutPanel lp =
-            new FlowLayoutPanel();
+        FlowLayoutPanel lp =  new FlowLayoutPanel();
 
        private void back_Click(object sender, EventArgs e)
         {
@@ -49,10 +45,6 @@ namespace EzivnostC
                 signupp.Visible = false;
                 infot.Visible = true;
                 infolabel.Visible = true;
-
-
-
-
             }
             else
             {
@@ -60,13 +52,7 @@ namespace EzivnostC
                 return;
                 
             }
-
-
-
         }
-
-
-
 
         private void Prihlasení_click(object sender, EventArgs e)
         {
@@ -81,35 +67,28 @@ namespace EzivnostC
                 MessageBox.Show("špatnì zadané údaje");
                 return ;
             }
-
-            Menu_pan.Visible=true;
-            loginp.Visible=false;
-            signupp.Visible = false;
-            SetProfileLabels();
+            start_menu();
         }
         string email;
         string heslo;
 
         private void Ulozit_Click(object sender, EventArgs e)
         {
-           
-           
-           
-            string ico = TextBoxICO.Text;
-            string dic = TextBoxDic.Text;
+            string ico = textBoxIÈO.Text;
+            string dic = textBoxDIÈ.Text;
             string jmeno = TextBoxJmeno.Text;
             string prijmeni = TextBoxPrijmeni.Text;
-            string zalohasoc = TextBoxZalohaSOC.Text;
-            string zalohazdr = TextBoxZalohaZP.Text;   
+            string zalohasoc = textBoxZaloha_soc.Text;
+            string zalohazdr =textBoxZalohaZdr.Text;   
             bool hlC = Hlavnicinnostcheck.Checked;
             string dat_nar = TextBoxDatNar.Text;
             string adresa = TextBoxAdresa.Text;
             try
             {
-                u = new User(jmeno,prijmeni,this.email,TextBoxTelCislo.Text,dat_nar,hlC,float.Parse(zalohazdr),float.Parse(zalohasoc),int.Parse(ico), dic,this.heslo,TextBoxAdresa.Text);
+                u = new User(jmeno,prijmeni,this.email,textBoxTelCislo.Text,dat_nar,hlC,float.Parse(zalohazdr),float.Parse(zalohasoc),int.Parse(ico), dic,this.heslo,TextBoxAdresa.Text);
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Nìjaký z údajù je zadaný špatnì");
                 return; 
@@ -124,50 +103,21 @@ namespace EzivnostC
                 MessageBox.Show(ex.Message);
                 return;
             }
-            SetProfileLabels();
-            Menu_pan.Visible = true;
-            loginp.Visible = false;
-            signupp.Visible = false;
-            infot.Visible = false;
-            infolabel.Visible = false;
+
+
+            start_menu();
 
 
         }
 
-        
-
-        private void connect_to_db()
+        public void start_menu()
         {
-        }
-        private void profilmenubutton_Click(object sender, EventArgs e)
-        {
-            Ulozeni_faktur_panel.Visible = true;
-            tableProfil.Visible = true; 
-        }
-
-        private void infot_Paint(object sender, PaintEventArgs e)
-        {
+            Main m = new Main(this.u);
+            this.Hide();
+            Application.Run(m);
 
         }
 
-        private void SetProfileLabels()
-        {
-            datajmenolabel.Text = u.Jmeno;
-            dataprijmenilabel.Text = u.Prijmeni;
-            dataemaillabel.Text = u.Email;
-            dataicolabel.Text = u.ico.ToString();
-            datadiclabel.Text = u.dic;
-            datatelcislolabel.Text = u.tel_cislo;
-            dataadresalabel.Text= "...";
-            datavydelekzamesiclabel.Text = "...";
-            datavydelekzatotoobdobílabel.Text = "...";
-            dataadresalabel.Text = u.adresa;
-
-        }
-
-        private void tableProfil_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
     }
 }

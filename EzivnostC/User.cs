@@ -12,7 +12,7 @@ namespace EzivnostC
 {
 
    
-    internal class User
+    public class User
     {
         private string connstring;
 

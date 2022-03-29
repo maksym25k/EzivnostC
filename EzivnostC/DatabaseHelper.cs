@@ -37,9 +37,16 @@ namespace EzivnostC
 
         public static Dictionary<string,string> deserialize()
         {
+            string i = "";
             Dictionary<string,string> store = new Dictionary<string, string>();
-
-            string i = File.ReadAllText(@"dbconf.json");
+            try
+            {
+                i = File.ReadAllText(@"dbconf.json");
+            }
+            catch
+            {
+                throw new Exception("Soubor konfigurace nenalezen");
+            }
             store = JsonConvert.DeserializeObject<Dictionary<string, string>>(i);
            
 
@@ -75,7 +82,7 @@ namespace EzivnostC
                     c.Open();
                     c.Close();
                 }
-                catch (Exception e){
+                catch (Exception ){
                     throw new Exception("Nelze se pripojit k serveru");
                 } }
                 

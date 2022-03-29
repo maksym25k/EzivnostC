@@ -173,7 +173,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="loginp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -341,7 +341,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;loginp.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="signupp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -566,7 +566,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;infolabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="infot.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -577,75 +577,459 @@
   <data name="infot.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="TextBoxDic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 216</value>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TextBoxDic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
   </data>
-  <data name="TextBoxDic.PlaceholderText" xml:space="preserve">
-    <value>DIČ</value>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="TextBoxDic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 14</value>
   </data>
-  <data name="TextBoxDic.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 25</value>
   </data>
-  <data name="&gt;&gt;TextBoxDic.Name" xml:space="preserve">
-    <value>TextBoxDic</value>
-  </data>
-  <data name="&gt;&gt;TextBoxDic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxDic.Parent" xml:space="preserve">
-    <value>infot</value>
-  </data>
-  <data name="&gt;&gt;TextBoxDic.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TextBoxICO.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 216</value>
-  </data>
-  <data name="TextBoxICO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxICO.PlaceholderText" xml:space="preserve">
-    <value>IČO</value>
-  </data>
-  <data name="TextBoxICO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxICO.TabIndex" type="System.Int32, mscorlib">
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;TextBoxICO.Name" xml:space="preserve">
-    <value>TextBoxICO</value>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Jméno:</value>
   </data>
-  <data name="&gt;&gt;TextBoxICO.Type" xml:space="preserve">
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxTelCislo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBoxTelCislo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="textBoxTelCislo.PlaceholderText" xml:space="preserve">
+    <value>+420...</value>
+  </data>
+  <data name="textBoxTelCislo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="textBoxTelCislo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelCislo.Name" xml:space="preserve">
+    <value>textBoxTelCislo</value>
+  </data>
+  <data name="&gt;&gt;textBoxTelCislo.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBoxICO.Parent" xml:space="preserve">
-    <value>infot</value>
+  <data name="&gt;&gt;textBoxTelCislo.Parent" xml:space="preserve">
+    <value>panel11</value>
   </data>
-  <data name="&gt;&gt;TextBoxICO.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;textBoxTelCislo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 413</value>
+  </data>
+  <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 100</value>
+  </data>
+  <data name="panel11.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panel11.Name" xml:space="preserve">
+    <value>panel11</value>
+  </data>
+  <data name="&gt;&gt;panel11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel11.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 25</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Výše zálohy sp:</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxZalohaZdr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="textBoxZalohaZdr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="textBoxZalohaZdr.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="textBoxZalohaZdr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="textBoxZalohaZdr.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxZalohaZdr.Name" xml:space="preserve">
+    <value>textBoxZalohaZdr</value>
+  </data>
+  <data name="&gt;&gt;textBoxZalohaZdr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxZalohaZdr.Parent" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;textBoxZalohaZdr.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 311</value>
+  </data>
+  <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel10.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;panel10.Name" xml:space="preserve">
+    <value>panel10</value>
+  </data>
+  <data name="&gt;&gt;panel10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel10.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 25</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Výše zálohy zp:</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxZaloha_soc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="textBoxZaloha_soc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="textBoxZaloha_soc.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="textBoxZaloha_soc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="textBoxZaloha_soc.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxZaloha_soc.Name" xml:space="preserve">
+    <value>textBoxZaloha_soc</value>
+  </data>
+  <data name="&gt;&gt;textBoxZaloha_soc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxZaloha_soc.Parent" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;textBoxZaloha_soc.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 311</value>
+  </data>
+  <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 25</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>DIČ:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxDIČ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="textBoxDIČ.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="textBoxDIČ.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="textBoxDIČ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="textBoxDIČ.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxDIČ.Name" xml:space="preserve">
+    <value>textBoxDIČ</value>
+  </data>
+  <data name="&gt;&gt;textBoxDIČ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxDIČ.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;textBoxDIČ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 209</value>
+  </data>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel8.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 25</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>IČO:</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxIČO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="textBoxIČO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="textBoxIČO.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="textBoxIČO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="textBoxIČO.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxIČO.Name" xml:space="preserve">
+    <value>textBoxIČO</value>
+  </data>
+  <data name="&gt;&gt;textBoxIČO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIČO.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;textBoxIČO.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 209</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 25</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Datum narození:</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="TextBoxDatNar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 114</value>
+    <value>10, 38</value>
   </data>
   <data name="TextBoxDatNar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
   </data>
   <data name="TextBoxDatNar.PlaceholderText" xml:space="preserve">
-    <value>Zadejte prosím datum narození  RRRR-MM-DD</value>
+    <value>RRRR-MM-DD</value>
   </data>
   <data name="TextBoxDatNar.Size" type="System.Drawing.Size, System.Drawing">
     <value>300, 23</value>
   </data>
   <data name="TextBoxDatNar.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;TextBoxDatNar.Name" xml:space="preserve">
     <value>TextBoxDatNar</value>
@@ -654,13 +1038,148 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TextBoxDatNar.Parent" xml:space="preserve">
-    <value>infot</value>
+    <value>panel6</value>
   </data>
   <data name="&gt;&gt;TextBoxDatNar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 107</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 10</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 25</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Příjmení:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBoxPrijmeni.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 38</value>
+  </data>
+  <data name="TextBoxPrijmeni.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="TextBoxPrijmeni.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="TextBoxPrijmeni.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="TextBoxPrijmeni.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;TextBoxPrijmeni.Name" xml:space="preserve">
+    <value>TextBoxPrijmeni</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPrijmeni.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPrijmeni.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPrijmeni.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 5</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 25</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Adresa:</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="TextBoxAdresa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 114</value>
+    <value>10, 38</value>
   </data>
   <data name="TextBoxAdresa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
@@ -681,117 +1200,30 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TextBoxAdresa.Parent" xml:space="preserve">
-    <value>infot</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;TextBoxAdresa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TextBoxPrijmeni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 12</value>
-  </data>
-  <data name="TextBoxPrijmeni.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxPrijmeni.PlaceholderText" xml:space="preserve">
-    <value>Zadejte prosím přijmení</value>
-  </data>
-  <data name="TextBoxPrijmeni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxPrijmeni.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;TextBoxPrijmeni.Name" xml:space="preserve">
-    <value>TextBoxPrijmeni</value>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 107</value>
   </data>
-  <data name="&gt;&gt;TextBoxPrijmeni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
   </data>
-  <data name="&gt;&gt;TextBoxPrijmeni.Parent" xml:space="preserve">
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
     <value>infot</value>
   </data>
-  <data name="&gt;&gt;TextBoxPrijmeni.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="TextBoxJmeno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="TextBoxJmeno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxJmeno.PlaceholderText" xml:space="preserve">
-    <value>Zadejte prosím jméno</value>
-  </data>
-  <data name="TextBoxJmeno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxJmeno.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TextBoxJmeno.Name" xml:space="preserve">
-    <value>TextBoxJmeno</value>
-  </data>
-  <data name="&gt;&gt;TextBoxJmeno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxJmeno.Parent" xml:space="preserve">
-    <value>infot</value>
-  </data>
-  <data name="&gt;&gt;TextBoxJmeno.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="TextBoxZalohaZP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 318</value>
-  </data>
-  <data name="TextBoxZalohaZP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxZalohaZP.PlaceholderText" xml:space="preserve">
-    <value>Výše zalohy zp</value>
-  </data>
-  <data name="TextBoxZalohaZP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxZalohaZP.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaZP.Name" xml:space="preserve">
-    <value>TextBoxZalohaZP</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaZP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaZP.Parent" xml:space="preserve">
-    <value>infot</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaZP.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="TextBoxZalohaSOC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 318</value>
-  </data>
-  <data name="TextBoxZalohaSOC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxZalohaSOC.PlaceholderText" xml:space="preserve">
-    <value>Výše zalohy soc.</value>
-  </data>
-  <data name="TextBoxZalohaSOC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxZalohaSOC.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaSOC.Name" xml:space="preserve">
-    <value>TextBoxZalohaSOC</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaSOC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaSOC.Parent" xml:space="preserve">
-    <value>infot</value>
-  </data>
-  <data name="&gt;&gt;TextBoxZalohaSOC.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="Hlavnicinnostcheck.AutoSize" type="System.Boolean, mscorlib">
@@ -800,11 +1232,14 @@
   <data name="Hlavnicinnostcheck.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
+  <data name="Hlavnicinnostcheck.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
   <data name="Hlavnicinnostcheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 40</value>
+    <value>309, 50</value>
   </data>
   <data name="Hlavnicinnostcheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>63, 26</value>
   </data>
   <data name="Hlavnicinnostcheck.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -831,16 +1266,16 @@
     <value>Segoe UI, 14.25pt</value>
   </data>
   <data name="labelHLC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 5</value>
+    <value>10, 14</value>
   </data>
   <data name="labelHLC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 25</value>
+    <value>288, 25</value>
   </data>
   <data name="labelHLC.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="labelHLC.Text" xml:space="preserve">
-    <value>Hlavní čínnost?</value>
+    <value>Podnikání je vaše hlavní činnost?</value>
   </data>
   <data name="&gt;&gt;labelHLC.Name" xml:space="preserve">
     <value>labelHLC</value>
@@ -858,7 +1293,7 @@
     <value>5, 413</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>466, 100</value>
+    <value>464, 100</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -875,8 +1310,86 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 25</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Jméno:</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TextBoxJmeno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 38</value>
+  </data>
+  <data name="TextBoxJmeno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 3, 3</value>
+  </data>
+  <data name="TextBoxJmeno.PlaceholderText" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="TextBoxJmeno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 23</value>
+  </data>
+  <data name="TextBoxJmeno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxJmeno.Name" xml:space="preserve">
+    <value>TextBoxJmeno</value>
+  </data>
+  <data name="&gt;&gt;TextBoxJmeno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxJmeno.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;TextBoxJmeno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 94</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>infot</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>576, 563</value>
+    <value>574, 563</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>100, 45, 3, 3</value>
@@ -900,33 +1413,6 @@
     <value>infot</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="TextBoxTelCislo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 420</value>
-  </data>
-  <data name="TextBoxTelCislo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 3</value>
-  </data>
-  <data name="TextBoxTelCislo.PlaceholderText" xml:space="preserve">
-    <value>Telefonni cislo:</value>
-  </data>
-  <data name="TextBoxTelCislo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 23</value>
-  </data>
-  <data name="TextBoxTelCislo.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;TextBoxTelCislo.Name" xml:space="preserve">
-    <value>TextBoxTelCislo</value>
-  </data>
-  <data name="&gt;&gt;TextBoxTelCislo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBoxTelCislo.Parent" xml:space="preserve">
-    <value>infot</value>
-  </data>
-  <data name="&gt;&gt;TextBoxTelCislo.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="infot.Location" type="System.Drawing.Point, System.Drawing">
@@ -936,7 +1422,7 @@
     <value>6</value>
   </data>
   <data name="infot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>999, 599</value>
+    <value>999, 615</value>
   </data>
   <data name="infot.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -957,1042 +1443,7 @@
     <value>0</value>
   </data>
   <data name="infot.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="TextBoxDic" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxICO" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDatNar" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxAdresa" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxPrijmeni" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxJmeno" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaZP" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaSOC" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxTelCislo" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,521" /&gt;&lt;Rows Styles="Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,106,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 0</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>990, 700</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Name" xml:space="preserve">
-    <value>Ulozeni_faktur_panel</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Parent" xml:space="preserve">
-    <value>Menu_pan</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableProfil.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
-    <value>Outset</value>
-  </data>
-  <data name="tableProfil.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 380</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="datavydelekzatotoobdobílabel.Text" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzatotoobdobílabel.Name" xml:space="preserve">
-    <value>datavydelekzatotoobdobílabel</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzatotoobdobílabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzatotoobdobílabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzatotoobdobílabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dataprumernyvydelek.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataprumernyvydelek.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="dataprumernyvydelek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 380</value>
-  </data>
-  <data name="dataprumernyvydelek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="dataprumernyvydelek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
-  </data>
-  <data name="dataprumernyvydelek.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="dataprumernyvydelek.Text" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;dataprumernyvydelek.Name" xml:space="preserve">
-    <value>dataprumernyvydelek</value>
-  </data>
-  <data name="&gt;&gt;dataprumernyvydelek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataprumernyvydelek.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;dataprumernyvydelek.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 422</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labeltelcis.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labeltelcis.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labeltelcis.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labeltelcis.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 96</value>
-  </data>
-  <data name="labeltelcis.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labeltelcis.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 20</value>
-  </data>
-  <data name="labeltelcis.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="labeltelcis.Text" xml:space="preserve">
-    <value>Telefonní číslo:</value>
-  </data>
-  <data name="&gt;&gt;labeltelcis.Name" xml:space="preserve">
-    <value>labeltelcis</value>
-  </data>
-  <data name="&gt;&gt;labeltelcis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labeltelcis.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labeltelcis.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelemail.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelemail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelemail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelemail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 96</value>
-  </data>
-  <data name="labelemail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelemail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="labelemail.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelemail.Text" xml:space="preserve">
-    <value>Email:</value>
-  </data>
-  <data name="&gt;&gt;labelemail.Name" xml:space="preserve">
-    <value>labelemail</value>
-  </data>
-  <data name="&gt;&gt;labelemail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelemail.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelemail.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="dataprijmenilabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataprijmenilabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="dataprijmenilabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 44</value>
-  </data>
-  <data name="dataprijmenilabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="dataprijmenilabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 23</value>
-  </data>
-  <data name="dataprijmenilabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="dataprijmenilabel.Text" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;dataprijmenilabel.Name" xml:space="preserve">
-    <value>dataprijmenilabel</value>
-  </data>
-  <data name="&gt;&gt;dataprijmenilabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataprijmenilabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;dataprijmenilabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="datajmenolabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datajmenolabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="datajmenolabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 44</value>
-  </data>
-  <data name="datajmenolabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="datajmenolabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 23</value>
-  </data>
-  <data name="datajmenolabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="datajmenolabel.Text" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;datajmenolabel.Name" xml:space="preserve">
-    <value>datajmenolabel</value>
-  </data>
-  <data name="&gt;&gt;datajmenolabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datajmenolabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;datajmenolabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="labelPrijmeni.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPrijmeni.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelPrijmeni.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelPrijmeni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 12</value>
-  </data>
-  <data name="labelPrijmeni.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelPrijmeni.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 20</value>
-  </data>
-  <data name="labelPrijmeni.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelPrijmeni.Text" xml:space="preserve">
-    <value>Prijmeni:</value>
-  </data>
-  <data name="&gt;&gt;labelPrijmeni.Name" xml:space="preserve">
-    <value>labelPrijmeni</value>
-  </data>
-  <data name="&gt;&gt;labelPrijmeni.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPrijmeni.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelPrijmeni.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelJmeno.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelJmeno.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelJmeno.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="labelJmeno.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelJmeno.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
-  <data name="labelJmeno.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelJmeno.Text" xml:space="preserve">
-    <value>Jmeno:</value>
-  </data>
-  <data name="&gt;&gt;labelJmeno.Name" xml:space="preserve">
-    <value>labelJmeno</value>
-  </data>
-  <data name="&gt;&gt;labelJmeno.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelJmeno.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelJmeno.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="dataemaillabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataemaillabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="dataemaillabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 128</value>
-  </data>
-  <data name="dataemaillabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="dataemaillabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
-  </data>
-  <data name="dataemaillabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="dataemaillabel.Text" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;dataemaillabel.Name" xml:space="preserve">
-    <value>dataemaillabel</value>
-  </data>
-  <data name="&gt;&gt;dataemaillabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataemaillabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;dataemaillabel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="datatelcislolabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datatelcislolabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 128</value>
-  </data>
-  <data name="datatelcislolabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="datatelcislolabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
-  </data>
-  <data name="datatelcislolabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="datatelcislolabel.Text" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;datatelcislolabel.Name" xml:space="preserve">
-    <value>datatelcislolabel</value>
-  </data>
-  <data name="&gt;&gt;datatelcislolabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datatelcislolabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;datatelcislolabel.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="labelICO.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelICO.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelICO.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 180</value>
-  </data>
-  <data name="labelICO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelICO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="labelICO.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="labelICO.Text" xml:space="preserve">
-    <value>IČO:</value>
-  </data>
-  <data name="&gt;&gt;labelICO.Name" xml:space="preserve">
-    <value>labelICO</value>
-  </data>
-  <data name="&gt;&gt;labelICO.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelICO.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelICO.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="labelDIC.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelDIC.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelDIC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 180</value>
-  </data>
-  <data name="labelDIC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelDIC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="labelDIC.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="labelDIC.Text" xml:space="preserve">
-    <value>DIČ:</value>
-  </data>
-  <data name="&gt;&gt;labelDIC.Name" xml:space="preserve">
-    <value>labelDIC</value>
-  </data>
-  <data name="&gt;&gt;labelDIC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelDIC.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelDIC.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="dataicolabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataicolabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 212</value>
-  </data>
-  <data name="dataicolabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="dataicolabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
-  </data>
-  <data name="dataicolabel.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="dataicolabel.Text" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;dataicolabel.Name" xml:space="preserve">
-    <value>dataicolabel</value>
-  </data>
-  <data name="&gt;&gt;dataicolabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataicolabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;dataicolabel.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="datadiclabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datadiclabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 212</value>
-  </data>
-  <data name="datadiclabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="datadiclabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
-  </data>
-  <data name="datadiclabel.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="datadiclabel.Text" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;datadiclabel.Name" xml:space="preserve">
-    <value>datadiclabel</value>
-  </data>
-  <data name="&gt;&gt;datadiclabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datadiclabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;datadiclabel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="labeladresa.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labeladresa.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labeladresa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 264</value>
-  </data>
-  <data name="labeladresa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labeladresa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="labeladresa.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="labeladresa.Text" xml:space="preserve">
-    <value>Adresa:</value>
-  </data>
-  <data name="&gt;&gt;labeladresa.Name" xml:space="preserve">
-    <value>labeladresa</value>
-  </data>
-  <data name="&gt;&gt;labeladresa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labeladresa.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labeladresa.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="labelvydelekzamesic.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelvydelekzamesic.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labelvydelekzamesic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelvydelekzamesic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 264</value>
-  </data>
-  <data name="labelvydelekzamesic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labelvydelekzamesic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 20</value>
-  </data>
-  <data name="labelvydelekzamesic.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="labelvydelekzamesic.Text" xml:space="preserve">
-    <value>Výdělek za tento měsic:</value>
-  </data>
-  <data name="&gt;&gt;labelvydelekzamesic.Name" xml:space="preserve">
-    <value>labelvydelekzamesic</value>
-  </data>
-  <data name="&gt;&gt;labelvydelekzamesic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelvydelekzamesic.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labelvydelekzamesic.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="dataadresalabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dataadresalabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 296</value>
-  </data>
-  <data name="dataadresalabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="dataadresalabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 23</value>
-  </data>
-  <data name="dataadresalabel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="dataadresalabel.Text" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;dataadresalabel.Name" xml:space="preserve">
-    <value>dataadresalabel</value>
-  </data>
-  <data name="&gt;&gt;dataadresalabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataadresalabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;dataadresalabel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="datavydelekzamesiclabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="datavydelekzamesiclabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 296</value>
-  </data>
-  <data name="datavydelekzamesiclabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="datavydelekzamesiclabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
-  </data>
-  <data name="datavydelekzamesiclabel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="datavydelekzamesiclabel.Text" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzamesiclabel.Name" xml:space="preserve">
-    <value>datavydelekzamesiclabel</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzamesiclabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzamesiclabel.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;datavydelekzamesiclabel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="labevydelekzarok.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labevydelekzarok.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="labevydelekzarok.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 348</value>
-  </data>
-  <data name="labevydelekzarok.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="labevydelekzarok.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
-  </data>
-  <data name="labevydelekzarok.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="labevydelekzarok.Text" xml:space="preserve">
-    <value>Výdělek za toto danove období:</value>
-  </data>
-  <data name="&gt;&gt;labevydelekzarok.Name" xml:space="preserve">
-    <value>labevydelekzarok</value>
-  </data>
-  <data name="&gt;&gt;labevydelekzarok.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labevydelekzarok.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;labevydelekzarok.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.25pt, style=Bold</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 348</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 3, 0</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 20</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="LabelPrůměrnyvydelek.Text" xml:space="preserve">
-    <value>Průměrný měsiční výdělek:</value>
-  </data>
-  <data name="&gt;&gt;LabelPrůměrnyvydelek.Name" xml:space="preserve">
-    <value>LabelPrůměrnyvydelek</value>
-  </data>
-  <data name="&gt;&gt;LabelPrůměrnyvydelek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LabelPrůměrnyvydelek.Parent" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;LabelPrůměrnyvydelek.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="tableProfil.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Sitka Small, 11.25pt, style=Bold</value>
-  </data>
-  <data name="tableProfil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 25</value>
-  </data>
-  <data name="tableProfil.RowCount" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="tableProfil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 471</value>
-  </data>
-  <data name="tableProfil.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableProfil.Name" xml:space="preserve">
-    <value>tableProfil</value>
-  </data>
-  <data name="&gt;&gt;tableProfil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableProfil.Parent" xml:space="preserve">
-    <value>Menu_pan</value>
-  </data>
-  <data name="&gt;&gt;tableProfil.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableProfil.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="datavydelekzatotoobdobílabel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataprumernyvydelek" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labeltelcis" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelemail" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataprijmenilabel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="datajmenolabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelPrijmeni" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelJmeno" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataemaillabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datatelcislolabel" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelICO" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelDIC" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dataicolabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datadiclabel" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labeladresa" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelvydelekzamesic" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dataadresalabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datavydelekzamesiclabel" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labevydelekzarok" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelPrůměrnyvydelek" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="MenuTablePanel.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="button10.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="button10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 525</value>
-  </data>
-  <data name="button10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="button10.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button10.Text" xml:space="preserve">
-    <value>Nastavení</value>
-  </data>
-  <data name="&gt;&gt;button10.Name" xml:space="preserve">
-    <value>button10</value>
-  </data>
-  <data name="&gt;&gt;button10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="button9.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 425</value>
-  </data>
-  <data name="button9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="button9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="button9.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button9.Text" xml:space="preserve">
-    <value>Tipy</value>
-  </data>
-  <data name="&gt;&gt;button9.Name" xml:space="preserve">
-    <value>button9</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="button8.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="button8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 325</value>
-  </data>
-  <data name="button8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="button8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="button8.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button8.Text" xml:space="preserve">
-    <value>Co platím?</value>
-  </data>
-  <data name="&gt;&gt;button8.Name" xml:space="preserve">
-    <value>button8</value>
-  </data>
-  <data name="&gt;&gt;button8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="button7.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 225</value>
-  </data>
-  <data name="button7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>Psolat fakturu</value>
-  </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
-  </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="button6.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 125</value>
-  </data>
-  <data name="button6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>Uložení faktur</value>
-  </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
-  </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="profilmenubutton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="profilmenubutton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="profilmenubutton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="profilmenubutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="profilmenubutton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>25, 3, 3, 3</value>
-  </data>
-  <data name="profilmenubutton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
-  </data>
-  <data name="profilmenubutton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="profilmenubutton.Text" xml:space="preserve">
-    <value>Profil</value>
-  </data>
-  <data name="&gt;&gt;profilmenubutton.Name" xml:space="preserve">
-    <value>profilmenubutton</value>
-  </data>
-  <data name="&gt;&gt;profilmenubutton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;profilmenubutton.Parent" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;profilmenubutton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="MenuTablePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MenuTablePanel.RowCount" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="MenuTablePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 600</value>
-  </data>
-  <data name="MenuTablePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MenuTablePanel.Name" xml:space="preserve">
-    <value>MenuTablePanel</value>
-  </data>
-  <data name="&gt;&gt;MenuTablePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuTablePanel.Parent" xml:space="preserve">
-    <value>Menu_pan</value>
-  </data>
-  <data name="&gt;&gt;MenuTablePanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="MenuTablePanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="button10" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button9" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button8" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button6" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="profilmenubutton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,200" /&gt;&lt;Rows Styles="Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="Menu_pan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 4</value>
-  </data>
-  <data name="Menu_pan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1183, 745</value>
-  </data>
-  <data name="Menu_pan.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="Menu_pan.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Menu_pan.Name" xml:space="preserve">
-    <value>Menu_pan</value>
-  </data>
-  <data name="&gt;&gt;Menu_pan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Menu_pan.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Menu_pan.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel11" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel10" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel9" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel8" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel5" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,523" /&gt;&lt;Rows Styles="Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,106,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

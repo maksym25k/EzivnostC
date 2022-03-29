@@ -57,58 +57,51 @@
             this.label3 = new System.Windows.Forms.Label();
             this.infolabel = new System.Windows.Forms.Label();
             this.infot = new System.Windows.Forms.TableLayoutPanel();
-            this.TextBoxDic = new System.Windows.Forms.TextBox();
-            this.TextBoxICO = new System.Windows.Forms.TextBox();
-            this.TextBoxDatNar = new System.Windows.Forms.TextBox();
             this.TextBoxAdresa = new System.Windows.Forms.TextBox();
-            this.TextBoxPrijmeni = new System.Windows.Forms.TextBox();
             this.TextBoxJmeno = new System.Windows.Forms.TextBox();
-            this.TextBoxZalohaZP = new System.Windows.Forms.TextBox();
-            this.TextBoxZalohaSOC = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Hlavnicinnostcheck = new System.Windows.Forms.CheckBox();
             this.labelHLC = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.TextBoxTelCislo = new System.Windows.Forms.TextBox();
-            this.Menu_pan = new System.Windows.Forms.Panel();
-            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableProfil = new System.Windows.Forms.TableLayoutPanel();
-            this.datavydelekzatotoobdobílabel = new System.Windows.Forms.Label();
-            this.dataprumernyvydelek = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TextBoxPrijmeni = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.TextBoxDatNar = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textBoxIČO = new System.Windows.Forms.TextBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.textBoxDIČ = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBoxZaloha_soc = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.textBoxZalohaZdr = new System.Windows.Forms.TextBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textBoxTelCislo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.labeltelcis = new System.Windows.Forms.Label();
-            this.labelemail = new System.Windows.Forms.Label();
-            this.dataprijmenilabel = new System.Windows.Forms.Label();
-            this.datajmenolabel = new System.Windows.Forms.Label();
-            this.labelPrijmeni = new System.Windows.Forms.Label();
-            this.labelJmeno = new System.Windows.Forms.Label();
-            this.dataemaillabel = new System.Windows.Forms.Label();
-            this.datatelcislolabel = new System.Windows.Forms.Label();
-            this.labelICO = new System.Windows.Forms.Label();
-            this.labelDIC = new System.Windows.Forms.Label();
-            this.dataicolabel = new System.Windows.Forms.Label();
-            this.datadiclabel = new System.Windows.Forms.Label();
-            this.labeladresa = new System.Windows.Forms.Label();
-            this.labelvydelekzamesic = new System.Windows.Forms.Label();
-            this.dataadresalabel = new System.Windows.Forms.Label();
-            this.datavydelekzamesiclabel = new System.Windows.Forms.Label();
-            this.labevydelekzarok = new System.Windows.Forms.Label();
-            this.LabelPrůměrnyvydelek = new System.Windows.Forms.Label();
-            this.MenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.profilmenubutton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.loginp.SuspendLayout();
             this.signupp.SuspendLayout();
             this.infot.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.Menu_pan.SuspendLayout();
-            this.tableProfil.SuspendLayout();
-            this.MenuTablePanel.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -266,61 +259,31 @@
             // 
             resources.ApplyResources(this.infot, "infot");
             this.infot.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.infot.Controls.Add(this.TextBoxDic, 1, 2);
-            this.infot.Controls.Add(this.TextBoxICO, 0, 2);
-            this.infot.Controls.Add(this.TextBoxDatNar, 1, 1);
-            this.infot.Controls.Add(this.TextBoxAdresa, 0, 1);
-            this.infot.Controls.Add(this.TextBoxPrijmeni, 1, 0);
-            this.infot.Controls.Add(this.TextBoxJmeno, 0, 0);
-            this.infot.Controls.Add(this.TextBoxZalohaZP, 0, 3);
-            this.infot.Controls.Add(this.TextBoxZalohaSOC, 1, 3);
+            this.infot.Controls.Add(this.panel11, 1, 4);
+            this.infot.Controls.Add(this.panel10, 1, 3);
+            this.infot.Controls.Add(this.panel9, 0, 3);
+            this.infot.Controls.Add(this.panel8, 1, 2);
+            this.infot.Controls.Add(this.panel7, 0, 2);
+            this.infot.Controls.Add(this.panel6, 1, 1);
+            this.infot.Controls.Add(this.panel5, 1, 0);
+            this.infot.Controls.Add(this.panel4, 0, 1);
             this.infot.Controls.Add(this.panel2, 0, 4);
+            this.infot.Controls.Add(this.panel3, 0, 0);
             this.infot.Controls.Add(this.button1, 1, 5);
-            this.infot.Controls.Add(this.TextBoxTelCislo, 1, 4);
             this.infot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.infot.Name = "infot";
             this.infot.Tag = "infot";
-            this.infot.Paint += new System.Windows.Forms.PaintEventHandler(this.infot_Paint);
-            // 
-            // TextBoxDic
-            // 
-            resources.ApplyResources(this.TextBoxDic, "TextBoxDic");
-            this.TextBoxDic.Name = "TextBoxDic";
-            // 
-            // TextBoxICO
-            // 
-            resources.ApplyResources(this.TextBoxICO, "TextBoxICO");
-            this.TextBoxICO.Name = "TextBoxICO";
-            // 
-            // TextBoxDatNar
-            // 
-            resources.ApplyResources(this.TextBoxDatNar, "TextBoxDatNar");
-            this.TextBoxDatNar.Name = "TextBoxDatNar";
             // 
             // TextBoxAdresa
             // 
             resources.ApplyResources(this.TextBoxAdresa, "TextBoxAdresa");
             this.TextBoxAdresa.Name = "TextBoxAdresa";
-            // 
-            // TextBoxPrijmeni
-            // 
-            resources.ApplyResources(this.TextBoxPrijmeni, "TextBoxPrijmeni");
-            this.TextBoxPrijmeni.Name = "TextBoxPrijmeni";
+            
             // 
             // TextBoxJmeno
             // 
             resources.ApplyResources(this.TextBoxJmeno, "TextBoxJmeno");
             this.TextBoxJmeno.Name = "TextBoxJmeno";
-            // 
-            // TextBoxZalohaZP
-            // 
-            resources.ApplyResources(this.TextBoxZalohaZP, "TextBoxZalohaZP");
-            this.TextBoxZalohaZP.Name = "TextBoxZalohaZP";
-            // 
-            // TextBoxZalohaSOC
-            // 
-            resources.ApplyResources(this.TextBoxZalohaSOC, "TextBoxZalohaSOC");
-            this.TextBoxZalohaSOC.Name = "TextBoxZalohaSOC";
             // 
             // panel2
             // 
@@ -334,8 +297,9 @@
             resources.ApplyResources(this.Hlavnicinnostcheck, "Hlavnicinnostcheck");
             this.Hlavnicinnostcheck.Checked = true;
             this.Hlavnicinnostcheck.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Hlavnicinnostcheck.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Hlavnicinnostcheck.Name = "Hlavnicinnostcheck";
-            this.Hlavnicinnostcheck.UseVisualStyleBackColor = true;
+            this.Hlavnicinnostcheck.UseVisualStyleBackColor = false;
             // 
             // labelHLC
             // 
@@ -350,216 +314,157 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Ulozit_Click);
             // 
-            // TextBoxTelCislo
+            // panel3
             // 
-            resources.ApplyResources(this.TextBoxTelCislo, "TextBoxTelCislo");
-            this.TextBoxTelCislo.Name = "TextBoxTelCislo";
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.TextBoxJmeno);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
-            // Menu_pan
+            // panel4
             // 
-            this.Menu_pan.Controls.Add(this.Ulozeni_faktur_panel);
-            this.Menu_pan.Controls.Add(this.tableProfil);
-            this.Menu_pan.Controls.Add(this.MenuTablePanel);
-            resources.ApplyResources(this.Menu_pan, "Menu_pan");
-            this.Menu_pan.Name = "Menu_pan";
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.TextBoxAdresa);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
-            // Ulozeni_faktur_panel
+            // panel5
             // 
-            resources.ApplyResources(this.Ulozeni_faktur_panel, "Ulozeni_faktur_panel");
-            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.TextBoxPrijmeni);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
             // 
-            // tableProfil
+            // TextBoxPrijmeni
             // 
-            this.tableProfil.BackColor = System.Drawing.SystemColors.ButtonFace;
-            resources.ApplyResources(this.tableProfil, "tableProfil");
-            this.tableProfil.Controls.Add(this.datavydelekzatotoobdobílabel, 0, 9);
-            this.tableProfil.Controls.Add(this.dataprumernyvydelek, 0, 9);
-            this.tableProfil.Controls.Add(this.label6, 0, 9);
-            this.tableProfil.Controls.Add(this.labeltelcis, 1, 2);
-            this.tableProfil.Controls.Add(this.labelemail, 0, 2);
-            this.tableProfil.Controls.Add(this.dataprijmenilabel, 1, 1);
-            this.tableProfil.Controls.Add(this.datajmenolabel, 0, 1);
-            this.tableProfil.Controls.Add(this.labelPrijmeni, 1, 0);
-            this.tableProfil.Controls.Add(this.labelJmeno, 0, 0);
-            this.tableProfil.Controls.Add(this.dataemaillabel, 0, 3);
-            this.tableProfil.Controls.Add(this.datatelcislolabel, 1, 3);
-            this.tableProfil.Controls.Add(this.labelICO, 0, 4);
-            this.tableProfil.Controls.Add(this.labelDIC, 1, 4);
-            this.tableProfil.Controls.Add(this.dataicolabel, 0, 5);
-            this.tableProfil.Controls.Add(this.datadiclabel, 1, 5);
-            this.tableProfil.Controls.Add(this.labeladresa, 0, 6);
-            this.tableProfil.Controls.Add(this.labelvydelekzamesic, 1, 6);
-            this.tableProfil.Controls.Add(this.dataadresalabel, 0, 7);
-            this.tableProfil.Controls.Add(this.datavydelekzamesiclabel, 1, 7);
-            this.tableProfil.Controls.Add(this.labevydelekzarok, 0, 8);
-            this.tableProfil.Controls.Add(this.LabelPrůměrnyvydelek, 1, 8);
-            this.tableProfil.Name = "tableProfil";
-            this.tableProfil.Paint += new System.Windows.Forms.PaintEventHandler(this.tableProfil_Paint);
+            resources.ApplyResources(this.TextBoxPrijmeni, "TextBoxPrijmeni");
+            this.TextBoxPrijmeni.Name = "TextBoxPrijmeni";
             // 
-            // datavydelekzatotoobdobílabel
+            // panel6
             // 
-            resources.ApplyResources(this.datavydelekzatotoobdobílabel, "datavydelekzatotoobdobílabel");
-            this.datavydelekzatotoobdobílabel.Name = "datavydelekzatotoobdobílabel";
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.TextBoxDatNar);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
             // 
-            // dataprumernyvydelek
+            // TextBoxDatNar
             // 
-            resources.ApplyResources(this.dataprumernyvydelek, "dataprumernyvydelek");
-            this.dataprumernyvydelek.Name = "dataprumernyvydelek";
+            resources.ApplyResources(this.TextBoxDatNar, "TextBoxDatNar");
+            this.TextBoxDatNar.Name = "TextBoxDatNar";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.textBoxIČO);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // textBoxIČO
+            // 
+            resources.ApplyResources(this.textBoxIČO, "textBoxIČO");
+            this.textBoxIČO.Name = "textBoxIČO";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.label9);
+            this.panel8.Controls.Add(this.textBoxDIČ);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // textBoxDIČ
+            // 
+            resources.ApplyResources(this.textBoxDIČ, "textBoxDIČ");
+            this.textBoxDIČ.Name = "textBoxDIČ";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Controls.Add(this.textBoxZaloha_soc);
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // textBoxZaloha_soc
+            // 
+            resources.ApplyResources(this.textBoxZaloha_soc, "textBoxZaloha_soc");
+            this.textBoxZaloha_soc.Name = "textBoxZaloha_soc";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label11);
+            this.panel10.Controls.Add(this.textBoxZalohaZdr);
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // textBoxZalohaZdr
+            // 
+            resources.ApplyResources(this.textBoxZalohaZdr, "textBoxZalohaZdr");
+            this.textBoxZalohaZdr.Name = "textBoxZalohaZdr";
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label12);
+            this.panel11.Controls.Add(this.textBoxTelCislo);
+            resources.ApplyResources(this.panel11, "panel11");
+            this.panel11.Name = "panel11";
+            // 
+            // textBoxTelCislo
+            // 
+            resources.ApplyResources(this.textBoxTelCislo, "textBoxTelCislo");
+            this.textBoxTelCislo.Name = "textBoxTelCislo";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Name = "label5";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Name = "label6";
             // 
-            // labeltelcis
+            // label7
             // 
-            resources.ApplyResources(this.labeltelcis, "labeltelcis");
-            this.labeltelcis.Name = "labeltelcis";
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Name = "label7";
             // 
-            // labelemail
+            // label8
             // 
-            resources.ApplyResources(this.labelemail, "labelemail");
-            this.labelemail.Name = "labelemail";
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Name = "label8";
             // 
-            // dataprijmenilabel
+            // label9
             // 
-            resources.ApplyResources(this.dataprijmenilabel, "dataprijmenilabel");
-            this.dataprijmenilabel.Name = "dataprijmenilabel";
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Name = "label9";
             // 
-            // datajmenolabel
+            // label10
             // 
-            resources.ApplyResources(this.datajmenolabel, "datajmenolabel");
-            this.datajmenolabel.Name = "datajmenolabel";
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Name = "label10";
             // 
-            // labelPrijmeni
+            // label11
             // 
-            resources.ApplyResources(this.labelPrijmeni, "labelPrijmeni");
-            this.labelPrijmeni.Name = "labelPrijmeni";
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Name = "label11";
             // 
-            // labelJmeno
+            // label12
             // 
-            resources.ApplyResources(this.labelJmeno, "labelJmeno");
-            this.labelJmeno.Name = "labelJmeno";
-            // 
-            // dataemaillabel
-            // 
-            resources.ApplyResources(this.dataemaillabel, "dataemaillabel");
-            this.dataemaillabel.Name = "dataemaillabel";
-            // 
-            // datatelcislolabel
-            // 
-            resources.ApplyResources(this.datatelcislolabel, "datatelcislolabel");
-            this.datatelcislolabel.Name = "datatelcislolabel";
-            // 
-            // labelICO
-            // 
-            resources.ApplyResources(this.labelICO, "labelICO");
-            this.labelICO.Name = "labelICO";
-            // 
-            // labelDIC
-            // 
-            resources.ApplyResources(this.labelDIC, "labelDIC");
-            this.labelDIC.Name = "labelDIC";
-            // 
-            // dataicolabel
-            // 
-            resources.ApplyResources(this.dataicolabel, "dataicolabel");
-            this.dataicolabel.Name = "dataicolabel";
-            // 
-            // datadiclabel
-            // 
-            resources.ApplyResources(this.datadiclabel, "datadiclabel");
-            this.datadiclabel.Name = "datadiclabel";
-            // 
-            // labeladresa
-            // 
-            resources.ApplyResources(this.labeladresa, "labeladresa");
-            this.labeladresa.Name = "labeladresa";
-            // 
-            // labelvydelekzamesic
-            // 
-            resources.ApplyResources(this.labelvydelekzamesic, "labelvydelekzamesic");
-            this.labelvydelekzamesic.Name = "labelvydelekzamesic";
-            // 
-            // dataadresalabel
-            // 
-            resources.ApplyResources(this.dataadresalabel, "dataadresalabel");
-            this.dataadresalabel.Name = "dataadresalabel";
-            // 
-            // datavydelekzamesiclabel
-            // 
-            resources.ApplyResources(this.datavydelekzamesiclabel, "datavydelekzamesiclabel");
-            this.datavydelekzamesiclabel.Name = "datavydelekzamesiclabel";
-            // 
-            // labevydelekzarok
-            // 
-            resources.ApplyResources(this.labevydelekzarok, "labevydelekzarok");
-            this.labevydelekzarok.Name = "labevydelekzarok";
-            // 
-            // LabelPrůměrnyvydelek
-            // 
-            resources.ApplyResources(this.LabelPrůměrnyvydelek, "LabelPrůměrnyvydelek");
-            this.LabelPrůměrnyvydelek.Name = "LabelPrůměrnyvydelek";
-            // 
-            // MenuTablePanel
-            // 
-            resources.ApplyResources(this.MenuTablePanel, "MenuTablePanel");
-            this.MenuTablePanel.Controls.Add(this.button10, 0, 5);
-            this.MenuTablePanel.Controls.Add(this.button9, 0, 4);
-            this.MenuTablePanel.Controls.Add(this.button8, 0, 3);
-            this.MenuTablePanel.Controls.Add(this.button7, 0, 2);
-            this.MenuTablePanel.Controls.Add(this.button6, 0, 1);
-            this.MenuTablePanel.Controls.Add(this.profilmenubutton, 0, 0);
-            this.MenuTablePanel.Name = "MenuTablePanel";
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // profilmenubutton
-            // 
-            resources.ApplyResources(this.profilmenubutton, "profilmenubutton");
-            this.profilmenubutton.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.profilmenubutton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.profilmenubutton.Name = "profilmenubutton";
-            this.profilmenubutton.UseVisualStyleBackColor = false;
-            this.profilmenubutton.Click += new System.EventHandler(this.profilmenubutton_Click);
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Name = "label12";
             // 
             // Welcome
             // 
@@ -567,7 +472,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.infot);
             this.Controls.Add(this.signupp);
-            this.Controls.Add(this.Menu_pan);
             this.Controls.Add(this.infolabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.loginp);
@@ -581,13 +485,26 @@
             this.signupp.ResumeLayout(false);
             this.signupp.PerformLayout();
             this.infot.ResumeLayout(false);
-            this.infot.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.Menu_pan.ResumeLayout(false);
-            this.tableProfil.ResumeLayout(false);
-            this.tableProfil.PerformLayout();
-            this.MenuTablePanel.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -614,49 +531,36 @@
         private Button button4;
         private Label infolabel;
         private TableLayoutPanel infot;
-        private TextBox TextBoxDic;
-        private TextBox TextBoxICO;
-        private TextBox TextBoxDatNar;
         private TextBox TextBoxAdresa;
-        private TextBox TextBoxPrijmeni;
         private TextBox TextBoxJmeno;
         private Button button1;
-        private Panel Menu_pan;
-        private TableLayoutPanel MenuTablePanel;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button profilmenubutton;
-        private FlowLayoutPanel Ulozeni_faktur_panel;
-        private TableLayoutPanel tableProfil;
-        private Label labeltelcis;
-        private Label labelemail;
-        private Label dataprijmenilabel;
-        private Label datajmenolabel;
-        private Label labelPrijmeni;
-        private Label labelJmeno;
-        private Label datavydelekzatotoobdobílabel;
-        private Label dataprumernyvydelek;
-        private Label label6;
-        private Label dataemaillabel;
-        private Label datatelcislolabel;
-        private Label labelICO;
-        private Label labelDIC;
-        private Label dataicolabel;
-        private Label datadiclabel;
-        private Label labeladresa;
-        private Label labelvydelekzamesic;
-        private Label dataadresalabel;
-        private Label datavydelekzamesiclabel;
-        private Label labevydelekzarok;
-        private Label LabelPrůměrnyvydelek;
-        private TextBox TextBoxZalohaZP;
-        private TextBox TextBoxZalohaSOC;
         private Panel panel2;
         private CheckBox Hlavnicinnostcheck;
         private Label labelHLC;
-        private TextBox TextBoxTelCislo;
+        private Panel panel4;
+        private Panel panel3;
+        private Panel panel11;
+        private TextBox textBoxTelCislo;
+        private Panel panel10;
+        private TextBox textBoxZalohaZdr;
+        private Panel panel9;
+        private TextBox textBoxZaloha_soc;
+        private Panel panel8;
+        private TextBox textBoxDIČ;
+        private Panel panel7;
+        private TextBox textBoxIČO;
+        private Panel panel6;
+        private TextBox TextBoxDatNar;
+        private Panel panel5;
+        private TextBox TextBoxPrijmeni;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label5;
+        private Label label6;
+        private Label label4;
+        private Label label12;
     }
 }
