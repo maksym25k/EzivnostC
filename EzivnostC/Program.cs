@@ -16,9 +16,17 @@ namespace EzivnostC
         /// </summary>
         [STAThread]
         static void Main()
-        {  
+        {
 
-           
+            try
+            {
+                DatabaseHelper.testConnection();
+            }
+            catch (Exception ex){
+                MessageBox.Show(ex.Message);
+
+                return;
+            }
             Welcome welcome = new Welcome();
             
             Application.Run(welcome);

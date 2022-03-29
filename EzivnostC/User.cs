@@ -159,8 +159,8 @@ namespace EzivnostC
 
         public void createConnstring()
         {
-            DatabaseHelper dh = new DatabaseHelper();
-            this.connstring = dh.createConnString();
+           
+            this.connstring = DatabaseHelper.createConnString();
 
 
         }
@@ -168,10 +168,10 @@ namespace EzivnostC
 
         public void ulozit_do_databaze()
             
-        { string connString = @"Server =DESKTOP-91O4NAF; Database = Ezivnost; Trusted_Connection = True;";
+        { 
             string query1 = "INSERT INTO Users VALUES (@jmeno,@prijmeni,@email ,@tel_cislo,@dat_nar, @hlavni_cinnost, @zaloha_zdr,@zaloha_soc,@ico, @dic,@heslo, @adresa)";
             createConnstring();
-            using (SqlConnection connection = new SqlConnection(this.connstring))
+            using (SqlConnection connection = DatabaseHelper.createconnection())
             {
                 using (SqlCommand command = new SqlCommand(query1, connection))
                 {
@@ -180,13 +180,12 @@ namespace EzivnostC
                     command.Parameters.Add("@prijmeni", SqlDbType.VarChar).Value = this.Prijmeni;
                     command.Parameters.Add("@tel_cislo", SqlDbType.VarChar).Value = this.tel_cislo;
                     command.Parameters.Add("@dat_nar", SqlDbType.Date).Value = "2002-02-02";
-
                     command.Parameters.Add("@hlavni_cinnost", SqlDbType.Bit).Value = this.hlavniCinnost;
                     command.Parameters.Add("@zaloha_zdr", SqlDbType.Decimal).Value = this.zalohaZdrav;
                     command.Parameters.Add("@zaloha_soc", SqlDbType.Decimal).Value = this.zalohaSoc;
                     command.Parameters.Add("@ico", SqlDbType.NVarChar).Value = this.ico;
                     command.Parameters.Add("@dic", SqlDbType.NVarChar).Value = this.dic;
-                    command.Parameters.Add("@email", SqlDbType.NVarChar).Value = this.dic;
+                    command.Parameters.Add("@email", SqlDbType.NVarChar).Value = this.Email;
                     command.Parameters.Add("@heslo", SqlDbType.NVarChar).Value = this.Heslo;
                     command.Parameters.Add("@adresa", SqlDbType.NVarChar).Value = this.adresa;
 
@@ -194,9 +193,11 @@ namespace EzivnostC
                     var result = command.ExecuteNonQuery();
                     connection.Close();
 
-                    // Check Error
+              
                     if (result < 0)
-                        Console.WriteLine("Error inserting data into Database!");
+                    {
+                        throw new Exception("Nepodařilo se přidat data do databaze");
+                    }
                 }
             }
         }
@@ -205,8 +206,8 @@ namespace EzivnostC
         {
             
             string select_Query = "select * from users where email = @email and heslo = @heslo";
-            createConnstring();
-            using (SqlConnection connection = new SqlConnection(this.connstring))
+
+            using (SqlConnection connection = DatabaseHelper.createconnection()) 
             {
                 using (SqlCommand command = new SqlCommand(select_Query, connection))
                  {

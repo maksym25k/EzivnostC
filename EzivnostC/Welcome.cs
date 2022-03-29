@@ -8,7 +8,7 @@ namespace EzivnostC
     public partial class Welcome : Form
     {
         User u = new User();
-       public DatabaseHelper dh = new DatabaseHelper();
+      
         
 
         
@@ -39,9 +39,9 @@ namespace EzivnostC
         }
         private void signup2_Click(object sender, EventArgs e)
         {
-            
 
-           this.email = emailRegistrace.Text;
+
+            u.setEmail(emailRegistrace.Text);
              this.heslo = hesloRegistrace.Text;
             string pheslo = PHesloRegistrace.Text;
             if (this.heslo == pheslo &&pheslo.Length >=8 && this.email.Length >=5)
@@ -133,6 +133,9 @@ namespace EzivnostC
 
 
         }
+
+        
+
         private void connect_to_db()
         {
         }
@@ -158,6 +161,11 @@ namespace EzivnostC
             dataadresalabel.Text= "...";
             datavydelekzamesiclabel.Text = "...";
             datavydelekzatotoobdobílabel.Text = "...";
+
+        }
+
+        private void tableProfil_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

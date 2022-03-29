@@ -7,18 +7,19 @@ using System.Text.Json;
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Data.SqlClient;
 
 namespace EzivnostC
 {
 
   
-    public   class DatabaseHelper
+    public  static class DatabaseHelper
     {
          
 
          
           
-        public   void serialize(string servername, string database_name , string login , string password)
+        public  static void serialize(string servername, string database_name , string login , string password)
         {
             Dictionary<string, string> dict = new Dictionary<string, string>
             {
@@ -34,7 +35,7 @@ namespace EzivnostC
         }
 
 
-        public Dictionary<string,string> deserialize()
+        public static Dictionary<string,string> deserialize()
         {
             Dictionary<string,string> store = new Dictionary<string, string>();
 
@@ -47,19 +48,34 @@ namespace EzivnostC
         }
 
 
-        public string createConnString()
+        public  static string createConnString()
         {
-            var a =deserialize();
+         /*   var a =deserialize();
             string ConnString = @"Server ="+a["servername"]+"; Database = "+a["database name"]+ ";User Id =" + a["login"]+";Password ="+a["Password"];
             /* return ConnString;*/
-            return "Server = DESKTOP-91O4NAF; Database = Ezivnost; Trusted_Connection = True";
+            return "Server = PC421; Database = Ezivnost; User id= sa; Password = student ";
 
         }
 
+        public  static SqlConnection createconnection()
+        {
+            return new SqlConnection(createConnString());
 
+        }
 
-
-
+        public static void testConnection()
+        {
+            try
+            {
+                SqlConnection c = createconnection();
+                c.Open();
+                c.Close();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Pripojeni k serveru selhalo, program se ukonci");
+            }
+        }
 
     }
 }

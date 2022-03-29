@@ -71,6 +71,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.TextBoxTelCislo = new System.Windows.Forms.TextBox();
             this.Menu_pan = new System.Windows.Forms.Panel();
+            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.tableProfil = new System.Windows.Forms.TableLayoutPanel();
             this.datavydelekzatotoobdobílabel = new System.Windows.Forms.Label();
             this.dataprumernyvydelek = new System.Windows.Forms.Label();
@@ -93,7 +94,6 @@
             this.datavydelekzamesiclabel = new System.Windows.Forms.Label();
             this.labevydelekzarok = new System.Windows.Forms.Label();
             this.LabelPrůměrnyvydelek = new System.Windows.Forms.Label();
-            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.MenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -357,11 +357,16 @@
             // 
             // Menu_pan
             // 
-            this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Controls.Add(this.Ulozeni_faktur_panel);
+            this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Controls.Add(this.MenuTablePanel);
             resources.ApplyResources(this.Menu_pan, "Menu_pan");
             this.Menu_pan.Name = "Menu_pan";
+            // 
+            // Ulozeni_faktur_panel
+            // 
+            resources.ApplyResources(this.Ulozeni_faktur_panel, "Ulozeni_faktur_panel");
+            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
             // 
             // tableProfil
             // 
@@ -389,7 +394,7 @@
             this.tableProfil.Controls.Add(this.labevydelekzarok, 0, 8);
             this.tableProfil.Controls.Add(this.LabelPrůměrnyvydelek, 1, 8);
             this.tableProfil.Name = "tableProfil";
-            
+            this.tableProfil.Paint += new System.Windows.Forms.PaintEventHandler(this.tableProfil_Paint);
             // 
             // datavydelekzatotoobdobílabel
             // 
@@ -496,11 +501,6 @@
             resources.ApplyResources(this.LabelPrůměrnyvydelek, "LabelPrůměrnyvydelek");
             this.LabelPrůměrnyvydelek.Name = "LabelPrůměrnyvydelek";
             // 
-            // Ulozeni_faktur_panel
-            // 
-            resources.ApplyResources(this.Ulozeni_faktur_panel, "Ulozeni_faktur_panel");
-            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
-            // 
             // MenuTablePanel
             // 
             resources.ApplyResources(this.MenuTablePanel, "MenuTablePanel");
@@ -565,11 +565,11 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.infot);
+            this.Controls.Add(this.signupp);
             this.Controls.Add(this.Menu_pan);
             this.Controls.Add(this.infolabel);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.signupp);
-            this.Controls.Add(this.infot);
             this.Controls.Add(this.loginp);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

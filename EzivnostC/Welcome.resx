@@ -173,7 +173,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="loginp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -530,7 +530,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;signupp.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="infolabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -566,7 +566,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;infolabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="infot.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -578,7 +578,7 @@
     <value>2</value>
   </data>
   <data name="TextBoxDic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 216</value>
+    <value>486, 216</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TextBoxDic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -633,7 +633,7 @@
     <value>1</value>
   </data>
   <data name="TextBoxDatNar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 114</value>
+    <value>486, 114</value>
   </data>
   <data name="TextBoxDatNar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
@@ -687,7 +687,7 @@
     <value>3</value>
   </data>
   <data name="TextBoxPrijmeni.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 12</value>
+    <value>486, 12</value>
   </data>
   <data name="TextBoxPrijmeni.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
@@ -768,7 +768,7 @@
     <value>6</value>
   </data>
   <data name="TextBoxZalohaSOC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 318</value>
+    <value>486, 318</value>
   </data>
   <data name="TextBoxZalohaSOC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
@@ -858,7 +858,7 @@
     <value>5, 413</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>470, 100</value>
+    <value>466, 100</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -876,7 +876,7 @@
     <value>8</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 563</value>
+    <value>576, 563</value>
   </data>
   <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>100, 45, 3, 3</value>
@@ -903,7 +903,7 @@
     <value>9</value>
   </data>
   <data name="TextBoxTelCislo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 420</value>
+    <value>486, 420</value>
   </data>
   <data name="TextBoxTelCislo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 10, 3, 3</value>
@@ -954,10 +954,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;infot.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="infot.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="TextBoxDic" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxICO" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDatNar" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxAdresa" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxPrijmeni" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxJmeno" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaZP" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaSOC" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxTelCislo" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,517" /&gt;&lt;Rows Styles="Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,106,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="TextBoxDic" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxICO" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxDatNar" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxAdresa" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxPrijmeni" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxJmeno" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaZP" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxZalohaSOC" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel2" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button1" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TextBoxTelCislo" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,Absolute,521" /&gt;&lt;Rows Styles="Absolute,100,Absolute,100,Absolute,100,Absolute,100,Absolute,106,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="Ulozeni_faktur_panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 0</value>
+  </data>
+  <data name="Ulozeni_faktur_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="Ulozeni_faktur_panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>990, 700</value>
+  </data>
+  <data name="Ulozeni_faktur_panel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Ulozeni_faktur_panel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Ulozeni_faktur_panel.Name" xml:space="preserve">
+    <value>Ulozeni_faktur_panel</value>
+  </data>
+  <data name="&gt;&gt;Ulozeni_faktur_panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ulozeni_faktur_panel.Parent" xml:space="preserve">
+    <value>Menu_pan</value>
+  </data>
+  <data name="&gt;&gt;Ulozeni_faktur_panel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tableProfil.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
     <value>Outset</value>
@@ -1677,37 +1704,10 @@
     <value>Menu_pan</value>
   </data>
   <data name="&gt;&gt;tableProfil.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tableProfil.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="datavydelekzatotoobdobílabel" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataprumernyvydelek" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labeltelcis" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelemail" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataprijmenilabel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="datajmenolabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelPrijmeni" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelJmeno" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="dataemaillabel" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datatelcislolabel" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelICO" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelDIC" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dataicolabel" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datadiclabel" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labeladresa" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelvydelekzamesic" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="dataadresalabel" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="datavydelekzamesiclabel" Row="7" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labevydelekzarok" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="LabelPrůměrnyvydelek" Row="8" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,30,Absolute,50,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 0</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>990, 700</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Ulozeni_faktur_panel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Name" xml:space="preserve">
-    <value>Ulozeni_faktur_panel</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.Parent" xml:space="preserve">
-    <value>Menu_pan</value>
-  </data>
-  <data name="&gt;&gt;Ulozeni_faktur_panel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="MenuTablePanel.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1992,7 +1992,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Menu_pan.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
