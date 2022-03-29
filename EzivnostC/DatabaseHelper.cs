@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Text.Json;
 using System.IO;
 using System.Windows.Forms;
@@ -60,7 +58,7 @@ namespace EzivnostC
          /*   var a =deserialize();
             string ConnString = @"Server ="+a["servername"]+"; Database = "+a["database name"]+ ";User Id =" + a["login"]+";Password ="+a["Password"];
             /* return ConnString;*/
-            return "Server = PC384; Database = Ezivnost; User id= sa; Password = student;Connection Timeout=2";
+            return "Server = DESKTOP-91O4NAF; Database = Ezivnost; User id= kvetsko; Password = kvetsko;Connection Timeout=2";
 
         }
 

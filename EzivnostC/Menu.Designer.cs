@@ -31,7 +31,6 @@ namespace EzivnostC
         private void InitializeComponent()
         {
             this.Menu_pan = new System.Windows.Forms.Panel();
-            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.tableProfil = new System.Windows.Forms.TableLayoutPanel();
             this.datavydelekzatotoobdobílabel = new System.Windows.Forms.Label();
             this.dataprumernyvydelek = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@ namespace EzivnostC
             this.labelPrijmeni = new System.Windows.Forms.Label();
             this.labelJmeno = new System.Windows.Forms.Label();
             this.dataemaillabel = new System.Windows.Forms.Label();
-            this.datatelcislolabel = new System.Windows.Forms.Label();
             this.labelICO = new System.Windows.Forms.Label();
             this.labelDIC = new System.Windows.Forms.Label();
             this.dataicolabel = new System.Windows.Forms.Label();
@@ -53,38 +51,45 @@ namespace EzivnostC
             this.datavydelekzamesiclabel = new System.Windows.Forms.Label();
             this.labevydelekzarok = new System.Windows.Forms.Label();
             this.LabelPrůměrnyvydelek = new System.Windows.Forms.Label();
+            this.datatelcislolabel = new System.Windows.Forms.Label();
+            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
             this.MenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Ulozenifaktury_menu_button = new System.Windows.Forms.Button();
             this.profilmenubutton = new System.Windows.Forms.Button();
+            this.UlozeniFakturPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.NahratSkenFaktury = new System.Windows.Forms.FolderBrowserDialog();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Vybrat_soubor_Button_f = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBoxPrijem_f = new System.Windows.Forms.CheckBox();
+            this.checkBoxVydaj_f = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LabelCastka = new System.Windows.Forms.Label();
+            this.textBoxCastka_Faktura = new System.Windows.Forms.TextBox();
+            this.buttonUlozitfakturu_f = new System.Windows.Forms.Button();
             this.Menu_pan.SuspendLayout();
             this.tableProfil.SuspendLayout();
             this.MenuTablePanel.SuspendLayout();
+            this.UlozeniFakturPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Menu_pan
             // 
+            this.Menu_pan.Controls.Add(this.MenuTablePanel);
             this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Controls.Add(this.Ulozeni_faktur_panel);
-            this.Menu_pan.Controls.Add(this.MenuTablePanel);
             this.Menu_pan.Location = new System.Drawing.Point(1, 8);
             this.Menu_pan.Name = "Menu_pan";
             this.Menu_pan.Size = new System.Drawing.Size(1183, 745);
             this.Menu_pan.TabIndex = 8;
             this.Menu_pan.Visible = false;
-            // 
-            // Ulozeni_faktur_panel
-            // 
-            this.Ulozeni_faktur_panel.BackColor = System.Drawing.Color.White;
-            this.Ulozeni_faktur_panel.Location = new System.Drawing.Point(193, 0);
-            this.Ulozeni_faktur_panel.Margin = new System.Windows.Forms.Padding(10);
-            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
-            this.Ulozeni_faktur_panel.Size = new System.Drawing.Size(990, 745);
-            this.Ulozeni_faktur_panel.TabIndex = 1;
-            this.Ulozeni_faktur_panel.Visible = false;
             // 
             // tableProfil
             // 
@@ -244,19 +249,6 @@ namespace EzivnostC
             this.dataemaillabel.TabIndex = 11;
             this.dataemaillabel.Text = "label13";
             // 
-            // datatelcislolabel
-            // 
-            this.datatelcislolabel.AutoSize = true;
-            this.datatelcislolabel.Font = new System.Drawing.Font("Sitka Display", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datatelcislolabel.ForeColor = System.Drawing.Color.White;
-            this.datatelcislolabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.datatelcislolabel.Location = new System.Drawing.Point(310, 162);
-            this.datatelcislolabel.Margin = new System.Windows.Forms.Padding(10);
-            this.datatelcislolabel.Name = "datatelcislolabel";
-            this.datatelcislolabel.Size = new System.Drawing.Size(56, 24);
-            this.datatelcislolabel.TabIndex = 12;
-            this.datatelcislolabel.Text = "label14";
-            // 
             // labelICO
             // 
             this.labelICO.AutoSize = true;
@@ -381,6 +373,29 @@ namespace EzivnostC
             this.LabelPrůměrnyvydelek.TabIndex = 22;
             this.LabelPrůměrnyvydelek.Text = "Průměrný měsiční výdělek:";
             // 
+            // datatelcislolabel
+            // 
+            this.datatelcislolabel.AutoSize = true;
+            this.datatelcislolabel.Font = new System.Drawing.Font("Sitka Display", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.datatelcislolabel.ForeColor = System.Drawing.Color.White;
+            this.datatelcislolabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.datatelcislolabel.Location = new System.Drawing.Point(310, 162);
+            this.datatelcislolabel.Margin = new System.Windows.Forms.Padding(10);
+            this.datatelcislolabel.Name = "datatelcislolabel";
+            this.datatelcislolabel.Size = new System.Drawing.Size(56, 24);
+            this.datatelcislolabel.TabIndex = 12;
+            this.datatelcislolabel.Text = "label14";
+            // 
+            // Ulozeni_faktur_panel
+            // 
+            this.Ulozeni_faktur_panel.BackColor = System.Drawing.Color.White;
+            this.Ulozeni_faktur_panel.Location = new System.Drawing.Point(193, 0);
+            this.Ulozeni_faktur_panel.Margin = new System.Windows.Forms.Padding(10);
+            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
+            this.Ulozeni_faktur_panel.Size = new System.Drawing.Size(990, 745);
+            this.Ulozeni_faktur_panel.TabIndex = 1;
+            this.Ulozeni_faktur_panel.Visible = false;
+            // 
             // MenuTablePanel
             // 
             this.MenuTablePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -390,7 +405,7 @@ namespace EzivnostC
             this.MenuTablePanel.Controls.Add(this.button9, 0, 4);
             this.MenuTablePanel.Controls.Add(this.button8, 0, 3);
             this.MenuTablePanel.Controls.Add(this.button7, 0, 2);
-            this.MenuTablePanel.Controls.Add(this.button6, 0, 1);
+            this.MenuTablePanel.Controls.Add(this.Ulozenifaktury_menu_button, 0, 1);
             this.MenuTablePanel.Controls.Add(this.profilmenubutton, 0, 0);
             this.MenuTablePanel.Location = new System.Drawing.Point(0, 0);
             this.MenuTablePanel.Name = "MenuTablePanel";
@@ -468,21 +483,21 @@ namespace EzivnostC
             this.button7.Text = "Psolat fakturu";
             this.button7.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // Ulozenifaktury_menu_button
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(25, 125);
-            this.button6.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 50);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Uložení faktur";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Ulozenifaktury_menu_button.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Ulozenifaktury_menu_button.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Ulozenifaktury_menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Ulozenifaktury_menu_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Ulozenifaktury_menu_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Ulozenifaktury_menu_button.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Ulozenifaktury_menu_button.Location = new System.Drawing.Point(25, 125);
+            this.Ulozenifaktury_menu_button.Margin = new System.Windows.Forms.Padding(25, 3, 3, 3);
+            this.Ulozenifaktury_menu_button.Name = "Ulozenifaktury_menu_button";
+            this.Ulozenifaktury_menu_button.Size = new System.Drawing.Size(150, 50);
+            this.Ulozenifaktury_menu_button.TabIndex = 1;
+            this.Ulozenifaktury_menu_button.Text = "Uložení faktur";
+            this.Ulozenifaktury_menu_button.UseVisualStyleBackColor = false;
             // 
             // profilmenubutton
             // 
@@ -500,6 +515,117 @@ namespace EzivnostC
             this.profilmenubutton.Text = "Profil";
             this.profilmenubutton.UseVisualStyleBackColor = false;
             // 
+            // UlozeniFakturPanel
+            // 
+            this.UlozeniFakturPanel.BackColor = System.Drawing.Color.White;
+            this.UlozeniFakturPanel.Controls.Add(this.tableLayoutPanel1);
+            this.UlozeniFakturPanel.Location = new System.Drawing.Point(194, 8);
+            this.UlozeniFakturPanel.Margin = new System.Windows.Forms.Padding(10);
+            this.UlozeniFakturPanel.Name = "UlozeniFakturPanel";
+            this.UlozeniFakturPanel.Size = new System.Drawing.Size(990, 745);
+            this.UlozeniFakturPanel.TabIndex = 2;
+            this.UlozeniFakturPanel.Visible = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.buttonUlozitfakturu_f, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Vybrat_soubor_Button_f, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 143F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(591, 217);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // Vybrat_soubor_Button_f
+            // 
+            this.Vybrat_soubor_Button_f.BackColor = System.Drawing.Color.White;
+            this.Vybrat_soubor_Button_f.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Vybrat_soubor_Button_f.ForeColor = System.Drawing.Color.Black;
+            this.Vybrat_soubor_Button_f.Location = new System.Drawing.Point(50, 25);
+            this.Vybrat_soubor_Button_f.Margin = new System.Windows.Forms.Padding(50, 25, 3, 3);
+            this.Vybrat_soubor_Button_f.Name = "Vybrat_soubor_Button_f";
+            this.Vybrat_soubor_Button_f.Size = new System.Drawing.Size(154, 40);
+            this.Vybrat_soubor_Button_f.TabIndex = 0;
+            this.Vybrat_soubor_Button_f.Text = "Vybrat soubor";
+            this.Vybrat_soubor_Button_f.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.checkBoxVydaj_f);
+            this.panel1.Controls.Add(this.checkBoxPrijem_f);
+            this.panel1.Location = new System.Drawing.Point(298, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 1;
+            // 
+            // checkBoxPrijem_f
+            // 
+            this.checkBoxPrijem_f.AutoSize = true;
+            this.checkBoxPrijem_f.Location = new System.Drawing.Point(20, 19);
+            this.checkBoxPrijem_f.Name = "checkBoxPrijem_f";
+            this.checkBoxPrijem_f.Size = new System.Drawing.Size(60, 19);
+            this.checkBoxPrijem_f.TabIndex = 0;
+            this.checkBoxPrijem_f.Text = "Příjem";
+            this.checkBoxPrijem_f.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVydaj_f
+            // 
+            this.checkBoxVydaj_f.AutoSize = true;
+            this.checkBoxVydaj_f.Location = new System.Drawing.Point(20, 55);
+            this.checkBoxVydaj_f.Name = "checkBoxVydaj_f";
+            this.checkBoxVydaj_f.Size = new System.Drawing.Size(55, 19);
+            this.checkBoxVydaj_f.TabIndex = 1;
+            this.checkBoxVydaj_f.Text = "Výdaj";
+            this.checkBoxVydaj_f.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textBoxCastka_Faktura);
+            this.panel2.Controls.Add(this.LabelCastka);
+            this.panel2.Location = new System.Drawing.Point(3, 111);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 2;
+            // 
+            // LabelCastka
+            // 
+            this.LabelCastka.AutoSize = true;
+            this.LabelCastka.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelCastka.Location = new System.Drawing.Point(47, 15);
+            this.LabelCastka.Name = "LabelCastka";
+            this.LabelCastka.Size = new System.Drawing.Size(55, 20);
+            this.LabelCastka.TabIndex = 0;
+            this.LabelCastka.Text = "Částka:";
+            // 
+            // textBoxCastka_Faktura
+            // 
+            this.textBoxCastka_Faktura.Location = new System.Drawing.Point(47, 51);
+            this.textBoxCastka_Faktura.Name = "textBoxCastka_Faktura";
+            this.textBoxCastka_Faktura.Size = new System.Drawing.Size(100, 23);
+            this.textBoxCastka_Faktura.TabIndex = 1;
+            // 
+            // buttonUlozitfakturu_f
+            // 
+            this.buttonUlozitfakturu_f.BackColor = System.Drawing.Color.White;
+            this.buttonUlozitfakturu_f.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonUlozitfakturu_f.ForeColor = System.Drawing.Color.Black;
+            this.buttonUlozitfakturu_f.Location = new System.Drawing.Point(345, 133);
+            this.buttonUlozitfakturu_f.Margin = new System.Windows.Forms.Padding(50, 25, 3, 3);
+            this.buttonUlozitfakturu_f.Name = "buttonUlozitfakturu_f";
+            this.buttonUlozitfakturu_f.Size = new System.Drawing.Size(154, 40);
+            this.buttonUlozitfakturu_f.TabIndex = 3;
+            this.buttonUlozitfakturu_f.Text = "Uložit";
+            this.buttonUlozitfakturu_f.UseVisualStyleBackColor = false;
+            this.buttonUlozitfakturu_f.Click += new System.EventHandler(this.buttonUlozitfakturu_f_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -507,6 +633,7 @@ namespace EzivnostC
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.Menu_pan);
+            this.Controls.Add(this.UlozeniFakturPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Main";
             this.Text = "Registrace";
@@ -514,6 +641,12 @@ namespace EzivnostC
             this.tableProfil.ResumeLayout(false);
             this.tableProfil.PerformLayout();
             this.MenuTablePanel.ResumeLayout(false);
+            this.UlozeniFakturPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -547,7 +680,18 @@ namespace EzivnostC
         private Button button9;
         private Button button8;
         private Button button7;
-        private Button button6;
+        private Button Ulozenifaktury_menu_button;
         private Button profilmenubutton;
+        private FlowLayoutPanel UlozeniFakturPanel;
+        private FolderBrowserDialog NahratSkenFaktury;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button buttonUlozitfakturu_f;
+        private Button Vybrat_soubor_Button_f;
+        private Panel panel1;
+        private CheckBox checkBoxVydaj_f;
+        private CheckBox checkBoxPrijem_f;
+        private Panel panel2;
+        private TextBox textBoxCastka_Faktura;
+        private Label LabelCastka;
     }
 }
