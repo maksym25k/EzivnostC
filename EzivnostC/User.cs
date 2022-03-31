@@ -51,7 +51,7 @@ namespace EzivnostC
             setEmail(Email);
             setTelCislo(tel_cislo);
 
-            setDat_nar(Dat_nar);
+            this.Datum_narozeni = Dat_nar;
             setHl_Cinnost(hlavni_cinnost);
             set_Zaloha_zdr(zaloha_zdrav);
             set_Zaloha_soc(zaloha_soc);
@@ -97,7 +97,7 @@ namespace EzivnostC
             }
             else
             {
-
+                throw (new Exception("Email je neplatný"));
 
             }
         }
@@ -119,11 +119,10 @@ namespace EzivnostC
 
         public void setDat_nar(string inp)
         {
-            if (Regex.IsMatch("[0-2][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]", inp))
-            {
+            
                 this.Datum_narozeni = inp;
 
-            }
+            
         }
         public void setHl_Cinnost(bool cinnost)
         {
@@ -179,7 +178,7 @@ namespace EzivnostC
                     command.Parameters.Add("@jmeno", SqlDbType.VarChar).Value = this.Jmeno;
                     command.Parameters.Add("@prijmeni", SqlDbType.VarChar).Value = this.Prijmeni;
                     command.Parameters.Add("@tel_cislo", SqlDbType.VarChar).Value = this.tel_cislo;
-                    command.Parameters.Add("@dat_nar", SqlDbType.Date).Value = "2002-02-02";
+                    command.Parameters.Add("@dat_nar", SqlDbType.Date).Value = this.Datum_narozeni;
                     command.Parameters.Add("@hlavni_cinnost", SqlDbType.Bit).Value = this.hlavniCinnost;
                     command.Parameters.Add("@zaloha_zdr", SqlDbType.Decimal).Value = this.zalohaZdrav;
                     command.Parameters.Add("@zaloha_soc", SqlDbType.Decimal).Value = this.zalohaSoc;
@@ -223,7 +222,7 @@ namespace EzivnostC
                     this.Jmeno = reader["jmeno"].ToString() ;
                     this.Datum_narozeni = reader["dat_nar"].ToString();
                     this.zalohaSoc = float.Parse(reader["zaloha_soc"].ToString());
-                    this.zalohaZdrav = float.Parse(reader["zaloha_zdrav"].ToString());
+                    this.zalohaZdrav = float.Parse(reader["zaloha_zdr"].ToString());
                     this.ico = int.Parse(reader["ico"].ToString());
                     this.dic = reader["dic"].ToString();
                     bool a = bool.Parse(reader["hlavni_cinnost"].ToString());

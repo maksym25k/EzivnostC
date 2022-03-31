@@ -8,14 +8,14 @@ namespace EzivnostC
     public partial class Welcome : Form
     {
         User u = new User();
- 
+
         public Welcome()
         {
             InitializeComponent();
         }
-        FlowLayoutPanel lp =  new FlowLayoutPanel();
+        FlowLayoutPanel lp = new FlowLayoutPanel();
 
-       private void back_Click(object sender, EventArgs e)
+        private void back_Click(object sender, EventArgs e)
         {
             loginp.Visible = false;
             signupp.Visible = false;
@@ -29,18 +29,18 @@ namespace EzivnostC
         }
         private void signup_Click(object sender, EventArgs e)
         {
-            panel1.Visible=false;
+            panel1.Visible = false;
             signupp.Visible = true;
-            
+
         }
         private void signup2_Click(object sender, EventArgs e)
         {
 
 
             u.setEmail(emailRegistrace.Text);
-             this.heslo = hesloRegistrace.Text;
+            this.heslo = hesloRegistrace.Text;
             string pheslo = PHesloRegistrace.Text;
-            if (this.heslo == pheslo &&pheslo.Length >=8 && this.email.Length >=5)
+            if (this.heslo == pheslo && pheslo.Length >= 8 && u.Email.Length >= 5)
             {
                 signupp.Visible = false;
                 infot.Visible = true;
@@ -50,7 +50,7 @@ namespace EzivnostC
             {
                 MessageBox.Show("Potvrzeni hesla a heslo se neschoduji nebo heslo je moc krátke");
                 return;
-                
+
             }
         }
 
@@ -62,10 +62,10 @@ namespace EzivnostC
             {
                 this.u.Prihlaseni(this.email, this.heslo);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("špatnì zadané údaje");
-                return ;
+                return;
             }
             start_menu();
         }
@@ -79,23 +79,23 @@ namespace EzivnostC
             string jmeno = TextBoxJmeno.Text;
             string prijmeni = TextBoxPrijmeni.Text;
             string zalohasoc = textBoxZaloha_soc.Text;
-            string zalohazdr =textBoxZalohaZdr.Text;   
+            string zalohazdr = textBoxZalohaZdr.Text;
             bool hlC = Hlavnicinnostcheck.Checked;
             string dat_nar = TextBoxDatNar.Text;
             string adresa = TextBoxAdresa.Text;
             try
             {
-                u = new User(jmeno,prijmeni,this.email,textBoxTelCislo.Text,dat_nar,hlC,float.Parse(zalohazdr),float.Parse(zalohasoc),int.Parse(ico), dic,this.heslo,TextBoxAdresa.Text);
+                u = new User(jmeno, prijmeni, u.Email, textBoxTelCislo.Text, dat_nar, hlC, float.Parse(zalohazdr), float.Parse(zalohasoc), int.Parse(ico), dic, hesloRegistrace.Text, TextBoxAdresa.Text);
 
             }
-            catch (Exception )
+            catch (Exception)
             {
                 MessageBox.Show("Nìjaký z údajù je zadaný špatnì");
-                return; 
+                return;
             }
             try
             {
-                u.ulozit_do_databaze(); 
+                u.ulozit_do_databaze();
 
             }
             catch (Exception ex)
@@ -112,12 +112,23 @@ namespace EzivnostC
 
         public void start_menu()
         {
-            Main m = new Main(this.u);
+            Menu m = new Menu(u);
             this.Hide();
-            Application.Run(m);
-
+            m.Show();
         }
+        /*  public  void ThreadProc()
+          {
+              Main m = new Main(this.u);
+              Application.Run(m);
+          }
 
-      
+          private void show_menu()
+          {
+              System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+              t.Start();
+              this.Close();
+
+
+          }*/
     }
 }

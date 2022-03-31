@@ -58,7 +58,9 @@ namespace EzivnostC
          /*   var a =deserialize();
             string ConnString = @"Server ="+a["servername"]+"; Database = "+a["database name"]+ ";User Id =" + a["login"]+";Password ="+a["Password"];
             /* return ConnString;*/
-            return "Server = DESKTOP-91O4NAF; Database = Ezivnost; User id= kvetsko; Password = kvetsko;Connection Timeout=2";
+            return "Data Source = 193.85.203.188;  Initial Catalog = kvetsko; User ID = kvetsko; Password = kvetsko25";
+
+
 
         }
 

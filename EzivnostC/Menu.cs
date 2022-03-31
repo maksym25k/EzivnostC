@@ -10,27 +10,32 @@ using System.Windows.Forms;
 
 namespace EzivnostC
 {
-    public partial class Main : Form
+    public partial class Menu : Form
     {
-        User u;
-        public Main(User u)
+        User user = new User();
+        public Menu( User u)
         {
-            this.u = u;
+            
             InitializeComponent();
             SetProfileLabels();
+            this.user =  u;
+        }
+
+        public void adduser(User u) {
+            user = u;
         }
         private void SetProfileLabels()
         {
-            datajmenolabel.Text = u.Jmeno;
-            dataprijmenilabel.Text = u.Prijmeni;
-            dataemaillabel.Text = u.Email;
-            dataicolabel.Text = u.ico.ToString();
-            datadiclabel.Text = u.dic;
-            datatelcislolabel.Text = u.tel_cislo;
+            datajmenolabel.Text = user.Jmeno;
+            dataprijmenilabel.Text = user.Prijmeni;
+            dataemaillabel.Text = user.Email;
+            dataicolabel.Text = user.ico.ToString();
+            datadiclabel.Text = user.dic;
+            datatelcislolabel.Text = user.tel_cislo;
             dataadresalabel.Text = "...";
             datavydelekzamesiclabel.Text = "...";
             datavydelekzatotoobdobílabel.Text = "...";
-            dataadresalabel.Text = u.adresa;
+            dataadresalabel.Text = user.adresa;
             dataprumernyvydelek.Text = "...";
 
         }
