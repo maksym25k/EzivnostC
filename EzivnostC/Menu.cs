@@ -12,13 +12,14 @@ namespace EzivnostC
 {
     public partial class Menu : Form
     {
-        User user = new User();
+        public User user = new User();
         public Menu( User u)
         {
             
             InitializeComponent();
+            this.user = u;
             SetProfileLabels();
-            this.user =  u;
+            
         }
 
         public void adduser(User u) {
@@ -45,5 +46,45 @@ namespace EzivnostC
         {
 
         }
+
+        private void Ulozenifaktury_menu_button_Click(object sender, EventArgs e)
+        {
+            tableProfil.Visible = false;
+            Ulozeni_faktur_panel.Visible = true;
+            FormularProUlozeniFaktury.Visible = true;
+        }
+
+        private void profilmenubutton_Click(object sender, EventArgs e)
+        {
+            tableProfil.Visible = true;
+            Ulozeni_faktur_panel.Visible=false;
+            FormularProUlozeniFaktury.Visible=false;
+        }
+
+        private void Ulozeni_faktur_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vybrat_soubor_Button_f_Click(object sender, EventArgs e)
+        {
+            openFileSkenFaktury.ShowDialog();
+            if (openFileSkenFaktury.FileName.Contains("pdf"))
+            {
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Soubor musí být ve formátu pdf");
+
+                return;
+            }        }
     }
 }

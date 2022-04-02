@@ -112,7 +112,7 @@ namespace EzivnostC
 
         public void start_menu()
         {
-            Menu m = new Menu(u);
+            Menu m = new Menu(this.u);
             this.Hide();
             m.Show();
         }
