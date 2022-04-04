@@ -29,22 +29,35 @@ namespace EzivnostC
         {
             datajmenolabel.Text = user.Jmeno;
             dataprijmenilabel.Text = user.Prijmeni;
-            dataemaillabel.Text = user.Email;
-            dataicolabel.Text = user.ico.ToString();
-            datadiclabel.Text = user.dic;
-            datatelcislolabel.Text = user.tel_cislo;
-            dataadresalabel.Text = "...";
-            datavydelekzamesiclabel.Text = "...";
-            datavydelekzatotoobdobílabel.Text = "...";
-            dataadresalabel.Text = user.adresa;
-            dataprumernyvydelek.Text = "...";
+            labelEmailProfil.Text = user.Email;
+            datavydelekzatotoobdobílabel.Text = "coming soon...";
+            dataprumernyvydelek.Text = "coming soon...";
+            
 
         }
 
 
         private void buttonUlozitfakturu_f_Click(object sender, EventArgs e)
         {
+            if ((radioButtonPrijem.Checked||radioButtonVydaj.Checked)&& textBoxCastka_Faktura.Text.Length>0)
+            {
+                Cursor = Cursors.WaitCursor;
+                try
+                {
+                    FakturaVystavena f = new FakturaVystavena(this.pathToFile, int.Parse(textBoxCastka_Faktura.Text), radioButtonPrijem.Checked, textBoxPoznamka.Text, comboBoxTyp.Text, int.Parse(textBoxEv_cislo.Text),Datum_Splatnosti_Textbox.Text);
+                    f.Ulozit_do_db(this.user);
+                    MessageBox.Show("Faktura byla uložená");
+                }
+                catch (Exception ex)
+                { 
+                    MessageBox.Show("Spatné vstupní údaje");
 
+                }
+                Cursor = Cursors.Default;
+
+
+
+            }
         }
 
         private void Ulozenifaktury_menu_button_Click(object sender, EventArgs e)
@@ -61,24 +74,19 @@ namespace EzivnostC
             FormularProUlozeniFaktury.Visible=false;
         }
 
-        private void Ulozeni_faktur_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
-
+        string pathToFile = "";
         private void Vybrat_soubor_Button_f_Click(object sender, EventArgs e)
         {
             openFileSkenFaktury.ShowDialog();
-            if (openFileSkenFaktury.FileName.Contains("pdf"))
+            if (openFileSkenFaktury.FileName.Contains(".pdf"))
             {
-
-
-
+                this.pathToFile = openFileSkenFaktury.FileName;
             }
             else
             {
@@ -86,5 +94,16 @@ namespace EzivnostC
 
                 return;
             }        }
+
+        private void tableProfil_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PrehledyButton_Click(object sender, EventArgs e)
+        {
+            FakturyPrehledy fp = new FakturyPrehledy();
+            fp.stahnout_fakturu("2020-09-02", @"C:\Users\42077\source\repos\maksym25k\EzivnostC\EzivnostC\Pdfka\file.pdf"); 
+        }
     }
 }

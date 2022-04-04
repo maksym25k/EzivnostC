@@ -19,7 +19,7 @@ namespace EzivnostC
 
 
 
-        private int id;
+        public int id;
         public string Jmeno { set; get; } /*{ get { return Jmeno; } set { Jmeno = setJmeno(Jmeno); } }*/
         public string Prijmeni { set; get; }/*{ get { return Prijmeni; } set { Prijmeni = setPrijmeni(Prijmeni); } }*/
         private string Heslo { set; get; }
@@ -156,20 +156,13 @@ namespace EzivnostC
 
         }
 
-        public void createConnstring()
-        {
-           
-            this.connstring = DatabaseHelper.createConnString();
-
-
-        }
-
+       
 
         public void ulozit_do_databaze()
             
         { 
             string query1 = "INSERT INTO Users VALUES (@jmeno,@prijmeni,@email ,@tel_cislo,@dat_nar, @hlavni_cinnost, @zaloha_zdr,@zaloha_soc,@ico, @dic,@heslo, @adresa)";
-            createConnstring();
+            
             using (SqlConnection connection = DatabaseHelper.createconnection())
             {
                 using (SqlCommand command = new SqlCommand(query1, connection))
