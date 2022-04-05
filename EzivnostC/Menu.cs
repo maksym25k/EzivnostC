@@ -30,7 +30,7 @@ namespace EzivnostC
             datajmenolabel.Text = user.Jmeno;
             dataprijmenilabel.Text = user.Prijmeni;
             labelEmailProfil.Text = user.Email;
-            datavydelekzatotoobdobílabel.Text = "coming soon...";
+           
             dataprumernyvydelek.Text = "coming soon...";
             
 
@@ -102,8 +102,23 @@ namespace EzivnostC
 
         private void PrehledyButton_Click(object sender, EventArgs e)
         {
-            FakturyPrehledy fp = new FakturyPrehledy();
-            fp.stahnout_fakturu("2020-09-02", @"C:\Users\42077\source\repos\maksym25k\EzivnostC\EzivnostC\Pdfka\file.pdf"); 
+           
+        }
+
+        private void Ulozeni_faktur_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelPřehledCastky_Paint(object sender, PaintEventArgs e)
+        {
+            
+
+        }
+
+        private void PrehledyPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

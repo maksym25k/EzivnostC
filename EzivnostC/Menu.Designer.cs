@@ -32,6 +32,15 @@ namespace EzivnostC
         private void InitializeComponent()
         {
             this.Menu_pan = new System.Windows.Forms.Panel();
+            this.tableProfil = new System.Windows.Forms.TableLayoutPanel();
+            this.labelemail = new System.Windows.Forms.Label();
+            this.dataprijmenilabel = new System.Windows.Forms.Label();
+            this.datajmenolabel = new System.Windows.Forms.Label();
+            this.labelPrijmeni = new System.Windows.Forms.Label();
+            this.labelJmeno = new System.Windows.Forms.Label();
+            this.dataprumernyvydelek = new System.Windows.Forms.Label();
+            this.Výnoszaměsic = new System.Windows.Forms.Label();
+            this.labelEmailProfil = new System.Windows.Forms.Label();
             this.MenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -61,22 +70,9 @@ namespace EzivnostC
             this.radioButtonVydaj = new System.Windows.Forms.RadioButton();
             this.radioButtonPrijem = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
-            this.Ulozeni_faktur_panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonUlozitfakturu_f = new System.Windows.Forms.Button();
-            this.buttonUlozit = new System.Windows.Forms.Button();
-            this.tableProfil = new System.Windows.Forms.TableLayoutPanel();
-            this.labelemail = new System.Windows.Forms.Label();
-            this.dataprijmenilabel = new System.Windows.Forms.Label();
-            this.datajmenolabel = new System.Windows.Forms.Label();
-            this.labelPrijmeni = new System.Windows.Forms.Label();
-            this.labelJmeno = new System.Windows.Forms.Label();
-            this.dataprumernyvydelek = new System.Windows.Forms.Label();
-            this.LabelPrůměrnyvydelek = new System.Windows.Forms.Label();
-            this.labevydelekzarok = new System.Windows.Forms.Label();
-            this.datavydelekzatotoobdobílabel = new System.Windows.Forms.Label();
-            this.labelEmailProfil = new System.Windows.Forms.Label();
             this.openFileSkenFaktury = new System.Windows.Forms.OpenFileDialog();
             this.Menu_pan.SuspendLayout();
+            this.tableProfil.SuspendLayout();
             this.MenuTablePanel.SuspendLayout();
             this.FormularProUlozeniFaktury.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -85,20 +81,146 @@ namespace EzivnostC
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.Ulozeni_faktur_panel.SuspendLayout();
-            this.tableProfil.SuspendLayout();
             this.SuspendLayout();
             // 
             // Menu_pan
             // 
             this.Menu_pan.Controls.Add(this.MenuTablePanel);
             this.Menu_pan.Controls.Add(this.FormularProUlozeniFaktury);
-            this.Menu_pan.Controls.Add(this.Ulozeni_faktur_panel);
             this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Location = new System.Drawing.Point(1, 8);
             this.Menu_pan.Name = "Menu_pan";
             this.Menu_pan.Size = new System.Drawing.Size(1183, 745);
             this.Menu_pan.TabIndex = 8;
+            // 
+            // tableProfil
+            // 
+            this.tableProfil.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tableProfil.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
+            this.tableProfil.ColumnCount = 2;
+            this.tableProfil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableProfil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableProfil.Controls.Add(this.labelemail, 0, 2);
+            this.tableProfil.Controls.Add(this.dataprijmenilabel, 1, 1);
+            this.tableProfil.Controls.Add(this.datajmenolabel, 0, 1);
+            this.tableProfil.Controls.Add(this.labelPrijmeni, 1, 0);
+            this.tableProfil.Controls.Add(this.labelJmeno, 0, 0);
+            this.tableProfil.Controls.Add(this.dataprumernyvydelek, 1, 3);
+            this.tableProfil.Controls.Add(this.Výnoszaměsic, 1, 2);
+            this.tableProfil.Controls.Add(this.labelEmailProfil, 0, 3);
+            this.tableProfil.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tableProfil.ForeColor = System.Drawing.Color.White;
+            this.tableProfil.Location = new System.Drawing.Point(222, 25);
+            this.tableProfil.Name = "tableProfil";
+            this.tableProfil.RowCount = 5;
+            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableProfil.Size = new System.Drawing.Size(597, 234);
+            this.tableProfil.TabIndex = 0;
+            this.tableProfil.Paint += new System.Windows.Forms.PaintEventHandler(this.tableProfil_Paint);
+            // 
+            // labelemail
+            // 
+            this.labelemail.AutoSize = true;
+            this.labelemail.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelemail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelemail.Location = new System.Drawing.Point(13, 129);
+            this.labelemail.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
+            this.labelemail.Name = "labelemail";
+            this.labelemail.Size = new System.Drawing.Size(55, 20);
+            this.labelemail.TabIndex = 6;
+            this.labelemail.Text = "Email:";
+            // 
+            // dataprijmenilabel
+            // 
+            this.dataprijmenilabel.AutoSize = true;
+            this.dataprijmenilabel.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataprijmenilabel.ForeColor = System.Drawing.Color.White;
+            this.dataprijmenilabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataprijmenilabel.Location = new System.Drawing.Point(310, 46);
+            this.dataprijmenilabel.Margin = new System.Windows.Forms.Padding(10);
+            this.dataprijmenilabel.Name = "dataprijmenilabel";
+            this.dataprijmenilabel.Size = new System.Drawing.Size(60, 23);
+            this.dataprijmenilabel.TabIndex = 4;
+            this.dataprijmenilabel.Text = "label8";
+            // 
+            // datajmenolabel
+            // 
+            this.datajmenolabel.AutoSize = true;
+            this.datajmenolabel.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.datajmenolabel.ForeColor = System.Drawing.Color.White;
+            this.datajmenolabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.datajmenolabel.Location = new System.Drawing.Point(13, 46);
+            this.datajmenolabel.Margin = new System.Windows.Forms.Padding(10);
+            this.datajmenolabel.Name = "datajmenolabel";
+            this.datajmenolabel.Size = new System.Drawing.Size(60, 23);
+            this.datajmenolabel.TabIndex = 3;
+            this.datajmenolabel.Text = "label7";
+            // 
+            // labelPrijmeni
+            // 
+            this.labelPrijmeni.AutoSize = true;
+            this.labelPrijmeni.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPrijmeni.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelPrijmeni.Location = new System.Drawing.Point(310, 13);
+            this.labelPrijmeni.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
+            this.labelPrijmeni.Name = "labelPrijmeni";
+            this.labelPrijmeni.Size = new System.Drawing.Size(76, 20);
+            this.labelPrijmeni.TabIndex = 1;
+            this.labelPrijmeni.Text = "Prijmeni:";
+            // 
+            // labelJmeno
+            // 
+            this.labelJmeno.AutoSize = true;
+            this.labelJmeno.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelJmeno.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelJmeno.Location = new System.Drawing.Point(13, 13);
+            this.labelJmeno.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
+            this.labelJmeno.Name = "labelJmeno";
+            this.labelJmeno.Size = new System.Drawing.Size(58, 20);
+            this.labelJmeno.TabIndex = 0;
+            this.labelJmeno.Text = "Jmeno:";
+            // 
+            // dataprumernyvydelek
+            // 
+            this.dataprumernyvydelek.AutoSize = true;
+            this.dataprumernyvydelek.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dataprumernyvydelek.ForeColor = System.Drawing.Color.White;
+            this.dataprumernyvydelek.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataprumernyvydelek.Location = new System.Drawing.Point(310, 162);
+            this.dataprumernyvydelek.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
+            this.dataprumernyvydelek.Name = "dataprumernyvydelek";
+            this.dataprumernyvydelek.Size = new System.Drawing.Size(60, 23);
+            this.dataprumernyvydelek.TabIndex = 9;
+            this.dataprumernyvydelek.Text = "label9";
+            // 
+            // Výnoszaměsic
+            // 
+            this.Výnoszaměsic.AutoSize = true;
+            this.Výnoszaměsic.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Výnoszaměsic.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Výnoszaměsic.Location = new System.Drawing.Point(310, 129);
+            this.Výnoszaměsic.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
+            this.Výnoszaměsic.Name = "Výnoszaměsic";
+            this.Výnoszaměsic.Size = new System.Drawing.Size(167, 20);
+            this.Výnoszaměsic.TabIndex = 22;
+            this.Výnoszaměsic.Text = "Výnos za tenhle měsíc";
+            // 
+            // labelEmailProfil
+            // 
+            this.labelEmailProfil.AutoSize = true;
+            this.labelEmailProfil.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEmailProfil.ForeColor = System.Drawing.Color.White;
+            this.labelEmailProfil.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelEmailProfil.Location = new System.Drawing.Point(13, 162);
+            this.labelEmailProfil.Margin = new System.Windows.Forms.Padding(10);
+            this.labelEmailProfil.Name = "labelEmailProfil";
+            this.labelEmailProfil.Size = new System.Drawing.Size(70, 23);
+            this.labelEmailProfil.TabIndex = 23;
+            this.labelEmailProfil.Text = "label12";
             // 
             // MenuTablePanel
             // 
@@ -229,7 +351,7 @@ namespace EzivnostC
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 258F));
-            this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
+            this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.FormularProUlozeniFaktury.Controls.Add(this.panel6, 0, 1);
             this.FormularProUlozeniFaktury.Controls.Add(this.panel2, 2, 0);
             this.FormularProUlozeniFaktury.Controls.Add(this.panel4, 3, 0);
@@ -464,200 +586,6 @@ namespace EzivnostC
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.buttonUlozitfakturu_f_Click);
             // 
-            // Ulozeni_faktur_panel
-            // 
-            this.Ulozeni_faktur_panel.BackColor = System.Drawing.Color.White;
-            this.Ulozeni_faktur_panel.Controls.Add(this.buttonUlozitfakturu_f);
-            this.Ulozeni_faktur_panel.Controls.Add(this.buttonUlozit);
-            this.Ulozeni_faktur_panel.Location = new System.Drawing.Point(193, 3);
-            this.Ulozeni_faktur_panel.Margin = new System.Windows.Forms.Padding(10);
-            this.Ulozeni_faktur_panel.Name = "Ulozeni_faktur_panel";
-            this.Ulozeni_faktur_panel.Size = new System.Drawing.Size(990, 745);
-            this.Ulozeni_faktur_panel.TabIndex = 1;
-            // 
-            // buttonUlozitfakturu_f
-            // 
-            this.buttonUlozitfakturu_f.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonUlozitfakturu_f.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.buttonUlozitfakturu_f.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonUlozitfakturu_f.ForeColor = System.Drawing.Color.Black;
-            this.buttonUlozitfakturu_f.Location = new System.Drawing.Point(50, 25);
-            this.buttonUlozitfakturu_f.Margin = new System.Windows.Forms.Padding(50, 25, 3, 3);
-            this.buttonUlozitfakturu_f.Name = "buttonUlozitfakturu_f";
-            this.buttonUlozitfakturu_f.Size = new System.Drawing.Size(154, 48);
-            this.buttonUlozitfakturu_f.TabIndex = 3;
-            this.buttonUlozitfakturu_f.Text = "Uložit";
-            this.buttonUlozitfakturu_f.UseVisualStyleBackColor = false;
-            this.buttonUlozitfakturu_f.Click += new System.EventHandler(this.buttonUlozitfakturu_f_Click);
-            // 
-            // buttonUlozit
-            // 
-            this.buttonUlozit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonUlozit.Location = new System.Drawing.Point(210, 3);
-            this.buttonUlozit.Name = "buttonUlozit";
-            this.buttonUlozit.Size = new System.Drawing.Size(266, 53);
-            this.buttonUlozit.TabIndex = 1;
-            this.buttonUlozit.Text = "Uložit";
-            this.buttonUlozit.UseVisualStyleBackColor = true;
-            // 
-            // tableProfil
-            // 
-            this.tableProfil.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tableProfil.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
-            this.tableProfil.ColumnCount = 2;
-            this.tableProfil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableProfil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableProfil.Controls.Add(this.labelemail, 0, 2);
-            this.tableProfil.Controls.Add(this.dataprijmenilabel, 1, 1);
-            this.tableProfil.Controls.Add(this.datajmenolabel, 0, 1);
-            this.tableProfil.Controls.Add(this.labelPrijmeni, 1, 0);
-            this.tableProfil.Controls.Add(this.labelJmeno, 0, 0);
-            this.tableProfil.Controls.Add(this.dataprumernyvydelek, 1, 3);
-            this.tableProfil.Controls.Add(this.LabelPrůměrnyvydelek, 1, 2);
-            this.tableProfil.Controls.Add(this.labevydelekzarok, 0, 4);
-            this.tableProfil.Controls.Add(this.datavydelekzatotoobdobílabel, 0, 5);
-            this.tableProfil.Controls.Add(this.labelEmailProfil, 0, 3);
-            this.tableProfil.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tableProfil.ForeColor = System.Drawing.Color.White;
-            this.tableProfil.Location = new System.Drawing.Point(222, 25);
-            this.tableProfil.Name = "tableProfil";
-            this.tableProfil.RowCount = 7;
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableProfil.Size = new System.Drawing.Size(597, 350);
-            this.tableProfil.TabIndex = 0;
-            this.tableProfil.Paint += new System.Windows.Forms.PaintEventHandler(this.tableProfil_Paint);
-            // 
-            // labelemail
-            // 
-            this.labelemail.AutoSize = true;
-            this.labelemail.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelemail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelemail.Location = new System.Drawing.Point(13, 129);
-            this.labelemail.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.labelemail.Name = "labelemail";
-            this.labelemail.Size = new System.Drawing.Size(55, 20);
-            this.labelemail.TabIndex = 6;
-            this.labelemail.Text = "Email:";
-            // 
-            // dataprijmenilabel
-            // 
-            this.dataprijmenilabel.AutoSize = true;
-            this.dataprijmenilabel.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataprijmenilabel.ForeColor = System.Drawing.Color.White;
-            this.dataprijmenilabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataprijmenilabel.Location = new System.Drawing.Point(310, 46);
-            this.dataprijmenilabel.Margin = new System.Windows.Forms.Padding(10);
-            this.dataprijmenilabel.Name = "dataprijmenilabel";
-            this.dataprijmenilabel.Size = new System.Drawing.Size(60, 23);
-            this.dataprijmenilabel.TabIndex = 4;
-            this.dataprijmenilabel.Text = "label8";
-            // 
-            // datajmenolabel
-            // 
-            this.datajmenolabel.AutoSize = true;
-            this.datajmenolabel.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datajmenolabel.ForeColor = System.Drawing.Color.White;
-            this.datajmenolabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.datajmenolabel.Location = new System.Drawing.Point(13, 46);
-            this.datajmenolabel.Margin = new System.Windows.Forms.Padding(10);
-            this.datajmenolabel.Name = "datajmenolabel";
-            this.datajmenolabel.Size = new System.Drawing.Size(60, 23);
-            this.datajmenolabel.TabIndex = 3;
-            this.datajmenolabel.Text = "label7";
-            // 
-            // labelPrijmeni
-            // 
-            this.labelPrijmeni.AutoSize = true;
-            this.labelPrijmeni.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPrijmeni.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelPrijmeni.Location = new System.Drawing.Point(310, 13);
-            this.labelPrijmeni.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.labelPrijmeni.Name = "labelPrijmeni";
-            this.labelPrijmeni.Size = new System.Drawing.Size(76, 20);
-            this.labelPrijmeni.TabIndex = 1;
-            this.labelPrijmeni.Text = "Prijmeni:";
-            // 
-            // labelJmeno
-            // 
-            this.labelJmeno.AutoSize = true;
-            this.labelJmeno.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelJmeno.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelJmeno.Location = new System.Drawing.Point(13, 13);
-            this.labelJmeno.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.labelJmeno.Name = "labelJmeno";
-            this.labelJmeno.Size = new System.Drawing.Size(58, 20);
-            this.labelJmeno.TabIndex = 0;
-            this.labelJmeno.Text = "Jmeno:";
-            // 
-            // dataprumernyvydelek
-            // 
-            this.dataprumernyvydelek.AutoSize = true;
-            this.dataprumernyvydelek.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dataprumernyvydelek.ForeColor = System.Drawing.Color.White;
-            this.dataprumernyvydelek.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataprumernyvydelek.Location = new System.Drawing.Point(310, 162);
-            this.dataprumernyvydelek.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.dataprumernyvydelek.Name = "dataprumernyvydelek";
-            this.dataprumernyvydelek.Size = new System.Drawing.Size(60, 23);
-            this.dataprumernyvydelek.TabIndex = 9;
-            this.dataprumernyvydelek.Text = "label9";
-            // 
-            // LabelPrůměrnyvydelek
-            // 
-            this.LabelPrůměrnyvydelek.AutoSize = true;
-            this.LabelPrůměrnyvydelek.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LabelPrůměrnyvydelek.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LabelPrůměrnyvydelek.Location = new System.Drawing.Point(310, 129);
-            this.LabelPrůměrnyvydelek.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.LabelPrůměrnyvydelek.Name = "LabelPrůměrnyvydelek";
-            this.LabelPrůměrnyvydelek.Size = new System.Drawing.Size(207, 20);
-            this.LabelPrůměrnyvydelek.TabIndex = 22;
-            this.LabelPrůměrnyvydelek.Text = "Průměrný měsiční výdělek:";
-            // 
-            // labevydelekzarok
-            // 
-            this.labevydelekzarok.AutoSize = true;
-            this.labevydelekzarok.Font = new System.Drawing.Font("Cambria", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labevydelekzarok.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labevydelekzarok.Location = new System.Drawing.Point(13, 245);
-            this.labevydelekzarok.Margin = new System.Windows.Forms.Padding(10, 10, 3, 0);
-            this.labevydelekzarok.Name = "labevydelekzarok";
-            this.labevydelekzarok.Size = new System.Drawing.Size(234, 20);
-            this.labevydelekzarok.TabIndex = 21;
-            this.labevydelekzarok.Text = "Výdělek za toto danove období:";
-            // 
-            // datavydelekzatotoobdobílabel
-            // 
-            this.datavydelekzatotoobdobílabel.AutoSize = true;
-            this.datavydelekzatotoobdobílabel.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.datavydelekzatotoobdobílabel.ForeColor = System.Drawing.Color.White;
-            this.datavydelekzatotoobdobílabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.datavydelekzatotoobdobílabel.Location = new System.Drawing.Point(13, 278);
-            this.datavydelekzatotoobdobílabel.Margin = new System.Windows.Forms.Padding(10);
-            this.datavydelekzatotoobdobílabel.Name = "datavydelekzatotoobdobílabel";
-            this.datavydelekzatotoobdobílabel.Size = new System.Drawing.Size(70, 23);
-            this.datavydelekzatotoobdobílabel.TabIndex = 10;
-            this.datavydelekzatotoobdobílabel.Text = "label12";
-            // 
-            // labelEmailProfil
-            // 
-            this.labelEmailProfil.AutoSize = true;
-            this.labelEmailProfil.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelEmailProfil.ForeColor = System.Drawing.Color.White;
-            this.labelEmailProfil.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelEmailProfil.Location = new System.Drawing.Point(13, 162);
-            this.labelEmailProfil.Margin = new System.Windows.Forms.Padding(10);
-            this.labelEmailProfil.Name = "labelEmailProfil";
-            this.labelEmailProfil.Size = new System.Drawing.Size(70, 23);
-            this.labelEmailProfil.TabIndex = 23;
-            this.labelEmailProfil.Text = "label12";
-            // 
             // openFileSkenFaktury
             // 
             this.openFileSkenFaktury.FileName = "openFileDialog1";
@@ -673,6 +601,8 @@ namespace EzivnostC
             this.Name = "Menu";
             this.Text = "Registrace";
             this.Menu_pan.ResumeLayout(false);
+            this.tableProfil.ResumeLayout(false);
+            this.tableProfil.PerformLayout();
             this.MenuTablePanel.ResumeLayout(false);
             this.FormularProUlozeniFaktury.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -687,9 +617,6 @@ namespace EzivnostC
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.Ulozeni_faktur_panel.ResumeLayout(false);
-            this.tableProfil.ResumeLayout(false);
-            this.tableProfil.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -697,15 +624,13 @@ namespace EzivnostC
         #endregion
         private Panel Menu_pan;
         private TableLayoutPanel tableProfil;
-        private Label datavydelekzatotoobdobílabel;
         private Label dataprumernyvydelek;
         private Label labelemail;
         private Label dataprijmenilabel;
         private Label datajmenolabel;
         private Label labelPrijmeni;
         private Label labelJmeno;
-        private Label labevydelekzarok;
-        private Label LabelPrůměrnyvydelek;
+        private Label Výnoszaměsic;
         private TableLayoutPanel MenuTablePanel;
         private Button button10;
         private Button button9;
@@ -713,9 +638,7 @@ namespace EzivnostC
         private Button PrehledyButton;
         private Button Ulozenifaktury_menu_button;
         private Button profilmenubutton;
-        private FlowLayoutPanel Ulozeni_faktur_panel;
         private TableLayoutPanel FormularProUlozeniFaktury;
-        private Button buttonUlozitfakturu_f;
         private Button Vybrat_soubor_Button_f;
         private Panel panel1;
         private Panel panel2;
@@ -730,7 +653,6 @@ namespace EzivnostC
         private RadioButton radioButtonPrijem;
         private Button button1;
         private TextBox textBoxPoznamka;
-        private Button buttonUlozit;
         private OpenFileDialog openFileSkenFaktury;
         private Label labelEmailProfil;
         private Panel panel5;

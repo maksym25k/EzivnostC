@@ -20,8 +20,8 @@ namespace EzivnostC
 
 
         public int id;
-        public string Jmeno { set; get; } /*{ get { return Jmeno; } set { Jmeno = setJmeno(Jmeno); } }*/
-        public string Prijmeni { set; get; }/*{ get { return Prijmeni; } set { Prijmeni = setPrijmeni(Prijmeni); } }*/
+        public string Jmeno { set; get; }
+        public string Prijmeni { set; get; }
         private string Heslo { set; get; }
         public string Email { set; get; }
         public string tel_cislo { set; get; }
