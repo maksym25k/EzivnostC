@@ -63,14 +63,14 @@ namespace EzivnostC
         private void Ulozenifaktury_menu_button_Click(object sender, EventArgs e)
         {
             tableProfil.Visible = false;
-            Ulozeni_faktur_panel.Visible = true;
+           
             FormularProUlozeniFaktury.Visible = true;
         }
 
         private void profilmenubutton_Click(object sender, EventArgs e)
         {
             tableProfil.Visible = true;
-            Ulozeni_faktur_panel.Visible=false;
+           
             FormularProUlozeniFaktury.Visible=false;
         }
 
@@ -102,6 +102,8 @@ namespace EzivnostC
 
         private void PrehledyButton_Click(object sender, EventArgs e)
         {
+           PrehledyF prehledy = new PrehledyF(user);
+           prehledy.Show();
            
         }
 

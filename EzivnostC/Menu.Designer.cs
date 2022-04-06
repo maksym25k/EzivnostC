@@ -85,9 +85,9 @@ namespace EzivnostC
             // 
             // Menu_pan
             // 
+            this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Controls.Add(this.MenuTablePanel);
             this.Menu_pan.Controls.Add(this.FormularProUlozeniFaktury);
-            this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Location = new System.Drawing.Point(1, 8);
             this.Menu_pan.Name = "Menu_pan";
             this.Menu_pan.Size = new System.Drawing.Size(1183, 745);
@@ -110,7 +110,7 @@ namespace EzivnostC
             this.tableProfil.Controls.Add(this.labelEmailProfil, 0, 3);
             this.tableProfil.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tableProfil.ForeColor = System.Drawing.Color.White;
-            this.tableProfil.Location = new System.Drawing.Point(222, 25);
+            this.tableProfil.Location = new System.Drawing.Point(200, 0);
             this.tableProfil.Name = "tableProfil";
             this.tableProfil.RowCount = 5;
             this.tableProfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
@@ -351,7 +351,7 @@ namespace EzivnostC
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 258F));
-            this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
+            this.FormularProUlozeniFaktury.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
             this.FormularProUlozeniFaktury.Controls.Add(this.panel6, 0, 1);
             this.FormularProUlozeniFaktury.Controls.Add(this.panel2, 2, 0);
             this.FormularProUlozeniFaktury.Controls.Add(this.panel4, 3, 0);
@@ -368,6 +368,7 @@ namespace EzivnostC
             this.FormularProUlozeniFaktury.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.FormularProUlozeniFaktury.Size = new System.Drawing.Size(978, 251);
             this.FormularProUlozeniFaktury.TabIndex = 0;
+            this.FormularProUlozeniFaktury.Visible = false;
             // 
             // panel6
             // 
