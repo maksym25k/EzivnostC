@@ -30,6 +30,8 @@
         {
             this.tabPrehledy = new System.Windows.Forms.TabControl();
             this.MesicniPrehledyTab = new System.Windows.Forms.TabPage();
+            this.PieChartPrijmy = new LiveCharts.WinForms.PieChart();
+            this.Zmenit_mesic_p_button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Label_Vynos_prehled = new System.Windows.Forms.Label();
@@ -42,7 +44,7 @@
             this.PrijmyLabel = new System.Windows.Forms.Label();
             this.PrehledyPodleKategoriiTab = new System.Windows.Forms.TabPage();
             this.PrijmyKatTab = new System.Windows.Forms.TabPage();
-            this.Zmenit_mesic_p_button = new System.Windows.Forms.Button();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.tabPrehledy.SuspendLayout();
             this.MesicniPrehledyTab.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -56,23 +58,44 @@
             this.tabPrehledy.Controls.Add(this.MesicniPrehledyTab);
             this.tabPrehledy.Controls.Add(this.PrehledyPodleKategoriiTab);
             this.tabPrehledy.Controls.Add(this.PrijmyKatTab);
-            this.tabPrehledy.Location = new System.Drawing.Point(12, 56);
+            this.tabPrehledy.Location = new System.Drawing.Point(12, 55);
             this.tabPrehledy.Name = "tabPrehledy";
             this.tabPrehledy.SelectedIndex = 0;
-            this.tabPrehledy.Size = new System.Drawing.Size(958, 463);
+            this.tabPrehledy.Size = new System.Drawing.Size(970, 530);
             this.tabPrehledy.TabIndex = 0;
             // 
             // MesicniPrehledyTab
             // 
+            this.MesicniPrehledyTab.Controls.Add(this.pieChart1);
+            this.MesicniPrehledyTab.Controls.Add(this.PieChartPrijmy);
             this.MesicniPrehledyTab.Controls.Add(this.Zmenit_mesic_p_button);
             this.MesicniPrehledyTab.Controls.Add(this.tableLayoutPanel1);
-            this.MesicniPrehledyTab.Location = new System.Drawing.Point(4, 24);
+            this.MesicniPrehledyTab.Location = new System.Drawing.Point(4, 22);
             this.MesicniPrehledyTab.Name = "MesicniPrehledyTab";
             this.MesicniPrehledyTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MesicniPrehledyTab.Size = new System.Drawing.Size(950, 435);
+            this.MesicniPrehledyTab.Size = new System.Drawing.Size(962, 504);
             this.MesicniPrehledyTab.TabIndex = 0;
             this.MesicniPrehledyTab.Text = "Mesiční přehledy";
             this.MesicniPrehledyTab.UseVisualStyleBackColor = true;
+            // 
+            // PieChartPrijmy
+            // 
+            this.PieChartPrijmy.Location = new System.Drawing.Point(404, 6);
+            this.PieChartPrijmy.Name = "PieChartPrijmy";
+            this.PieChartPrijmy.Size = new System.Drawing.Size(303, 248);
+            this.PieChartPrijmy.TabIndex = 2;
+            this.PieChartPrijmy.Text = "Přehledy podle kategorii";
+            this.PieChartPrijmy.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.pieChart1_ChildChanged);
+            // 
+            // Zmenit_mesic_p_button
+            // 
+            this.Zmenit_mesic_p_button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.Zmenit_mesic_p_button.Location = new System.Drawing.Point(36, 297);
+            this.Zmenit_mesic_p_button.Name = "Zmenit_mesic_p_button";
+            this.Zmenit_mesic_p_button.Size = new System.Drawing.Size(141, 33);
+            this.Zmenit_mesic_p_button.TabIndex = 1;
+            this.Zmenit_mesic_p_button.Text = "Zvolit jiný měsíc";
+            this.Zmenit_mesic_p_button.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -82,29 +105,29 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(39, 34);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(33, 29);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(407, 273);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(349, 237);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.Label_Vynos_prehled);
             this.panel3.Controls.Add(this.VynosyLabel);
-            this.panel3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel3.Location = new System.Drawing.Point(3, 139);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
+            this.panel3.Location = new System.Drawing.Point(3, 121);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(197, 107);
+            this.panel3.Size = new System.Drawing.Size(168, 93);
             this.panel3.TabIndex = 2;
             // 
             // Label_Vynos_prehled
             // 
             this.Label_Vynos_prehled.AutoSize = true;
-            this.Label_Vynos_prehled.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_Vynos_prehled.Location = new System.Drawing.Point(3, 53);
+            this.Label_Vynos_prehled.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
+            this.Label_Vynos_prehled.Location = new System.Drawing.Point(3, 46);
             this.Label_Vynos_prehled.Name = "Label_Vynos_prehled";
             this.Label_Vynos_prehled.Size = new System.Drawing.Size(52, 21);
             this.Label_Vynos_prehled.TabIndex = 3;
@@ -113,8 +136,8 @@
             // VynosyLabel
             // 
             this.VynosyLabel.AutoSize = true;
-            this.VynosyLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VynosyLabel.Location = new System.Drawing.Point(3, 11);
+            this.VynosyLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.VynosyLabel.Location = new System.Drawing.Point(3, 10);
             this.VynosyLabel.Name = "VynosyLabel";
             this.VynosyLabel.Size = new System.Drawing.Size(56, 21);
             this.VynosyLabel.TabIndex = 1;
@@ -124,16 +147,16 @@
             // 
             this.panel2.Controls.Add(this.Label_vydaje_prehledy);
             this.panel2.Controls.Add(this.VydajeLabel);
-            this.panel2.Location = new System.Drawing.Point(206, 3);
+            this.panel2.Location = new System.Drawing.Point(177, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 100);
+            this.panel2.Size = new System.Drawing.Size(169, 87);
             this.panel2.TabIndex = 1;
             // 
             // Label_vydaje_prehledy
             // 
             this.Label_vydaje_prehledy.AutoSize = true;
-            this.Label_vydaje_prehledy.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_vydaje_prehledy.Location = new System.Drawing.Point(9, 50);
+            this.Label_vydaje_prehledy.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
+            this.Label_vydaje_prehledy.Location = new System.Drawing.Point(8, 43);
             this.Label_vydaje_prehledy.Name = "Label_vydaje_prehledy";
             this.Label_vydaje_prehledy.Size = new System.Drawing.Size(52, 21);
             this.Label_vydaje_prehledy.TabIndex = 1;
@@ -142,8 +165,8 @@
             // VydajeLabel
             // 
             this.VydajeLabel.AutoSize = true;
-            this.VydajeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.VydajeLabel.Location = new System.Drawing.Point(3, 11);
+            this.VydajeLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.VydajeLabel.Location = new System.Drawing.Point(3, 10);
             this.VydajeLabel.Name = "VydajeLabel";
             this.VydajeLabel.Size = new System.Drawing.Size(60, 21);
             this.VydajeLabel.TabIndex = 0;
@@ -155,14 +178,14 @@
             this.panel1.Controls.Add(this.PrijmyLabel);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 100);
+            this.panel1.Size = new System.Drawing.Size(168, 87);
             this.panel1.TabIndex = 0;
             // 
             // Label_prijmy_prehledy
             // 
             this.Label_prijmy_prehledy.AutoSize = true;
-            this.Label_prijmy_prehledy.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Label_prijmy_prehledy.Location = new System.Drawing.Point(3, 50);
+            this.Label_prijmy_prehledy.Font = new System.Drawing.Font("Segoe UI Symbol", 12F);
+            this.Label_prijmy_prehledy.Location = new System.Drawing.Point(3, 43);
             this.Label_prijmy_prehledy.Name = "Label_prijmy_prehledy";
             this.Label_prijmy_prehledy.Size = new System.Drawing.Size(52, 21);
             this.Label_prijmy_prehledy.TabIndex = 2;
@@ -171,8 +194,8 @@
             // PrijmyLabel
             // 
             this.PrijmyLabel.AutoSize = true;
-            this.PrijmyLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PrijmyLabel.Location = new System.Drawing.Point(3, 11);
+            this.PrijmyLabel.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PrijmyLabel.Location = new System.Drawing.Point(3, 10);
             this.PrijmyLabel.Name = "PrijmyLabel";
             this.PrijmyLabel.Size = new System.Drawing.Size(58, 21);
             this.PrijmyLabel.TabIndex = 1;
@@ -181,38 +204,36 @@
             // PrehledyPodleKategoriiTab
             // 
             this.PrehledyPodleKategoriiTab.BackColor = System.Drawing.Color.Transparent;
-            this.PrehledyPodleKategoriiTab.Location = new System.Drawing.Point(4, 24);
+            this.PrehledyPodleKategoriiTab.Location = new System.Drawing.Point(4, 22);
             this.PrehledyPodleKategoriiTab.Name = "PrehledyPodleKategoriiTab";
             this.PrehledyPodleKategoriiTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PrehledyPodleKategoriiTab.Size = new System.Drawing.Size(950, 435);
+            this.PrehledyPodleKategoriiTab.Size = new System.Drawing.Size(962, 504);
             this.PrehledyPodleKategoriiTab.TabIndex = 1;
             this.PrehledyPodleKategoriiTab.Text = "Výdaje podle typu";
             // 
             // PrijmyKatTab
             // 
-            this.PrijmyKatTab.Location = new System.Drawing.Point(4, 24);
+            this.PrijmyKatTab.Location = new System.Drawing.Point(4, 22);
             this.PrijmyKatTab.Name = "PrijmyKatTab";
             this.PrijmyKatTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PrijmyKatTab.Size = new System.Drawing.Size(950, 479);
+            this.PrijmyKatTab.Size = new System.Drawing.Size(813, 375);
             this.PrijmyKatTab.TabIndex = 2;
             this.PrijmyKatTab.Text = "Příjmy podle typu";
             this.PrijmyKatTab.UseVisualStyleBackColor = true;
             // 
-            // Zmenit_mesic_p_button
+            // pieChart1
             // 
-            this.Zmenit_mesic_p_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Zmenit_mesic_p_button.Location = new System.Drawing.Point(685, 34);
-            this.Zmenit_mesic_p_button.Name = "Zmenit_mesic_p_button";
-            this.Zmenit_mesic_p_button.Size = new System.Drawing.Size(134, 38);
-            this.Zmenit_mesic_p_button.TabIndex = 1;
-            this.Zmenit_mesic_p_button.Text = "Zvolit jiný měsíc";
-            this.Zmenit_mesic_p_button.UseVisualStyleBackColor = true;
+            this.pieChart1.Location = new System.Drawing.Point(404, 260);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(303, 238);
+            this.pieChart1.TabIndex = 3;
+            this.pieChart1.Text = "Přehledy podle kategorii";
             // 
             // PrehledyF
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 531);
+            this.ClientSize = new System.Drawing.Size(994, 597);
             this.Controls.Add(this.tabPrehledy);
             this.Name = "PrehledyF";
             this.Text = " ";
@@ -246,5 +267,7 @@
         private System.Windows.Forms.TabPage PrehledyPodleKategoriiTab;
         private System.Windows.Forms.TabPage PrijmyKatTab;
         private System.Windows.Forms.Button Zmenit_mesic_p_button;
+        private LiveCharts.WinForms.PieChart PieChartPrijmy;
+        private LiveCharts.WinForms.PieChart pieChart1;
     }
 }

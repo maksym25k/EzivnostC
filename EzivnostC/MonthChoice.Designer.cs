@@ -50,7 +50,7 @@
             // 
             this.textBoxMesic.Location = new System.Drawing.Point(12, 85);
             this.textBoxMesic.Name = "textBoxMesic";
-            this.textBoxMesic.PlaceholderText = "1-12";
+            
             this.textBoxMesic.Size = new System.Drawing.Size(100, 23);
             this.textBoxMesic.TabIndex = 1;
             // 
@@ -58,7 +58,7 @@
             // 
             this.textBoxRok.Location = new System.Drawing.Point(172, 85);
             this.textBoxRok.Name = "textBoxRok";
-            this.textBoxRok.PlaceholderText = "XXXX";
+            
             this.textBoxRok.Size = new System.Drawing.Size(100, 23);
             this.textBoxRok.TabIndex = 2;
             // 

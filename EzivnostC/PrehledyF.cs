@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace EzivnostC
 {
     public partial class PrehledyF : Form
     {
+        SeriesCollection seriesViews = new SeriesCollection();
 
-       public int rok { get; }
+        public int rok { get; }
         public int mesic { get; }
 
         User user = new User();
@@ -28,7 +31,32 @@ namespace EzivnostC
             this.mesic = choice.mesic;
             InitializeComponent();
             nacist_prijmy_a_vydje();
+            this.PieChartPrijmy.Series.Clear();
+            
+            
+            PieChartPrijmy.Series = seriesViews;
+            
+
+
+
         }
+
+
+        public void PieChartPrijmy_add(decimal castka, string typ)
+        {
+            seriesViews.Add(new PieSeries
+            {
+                Title = typ,
+                Values = new ChartValues<decimal> { castka },
+                DataLabels = true
+
+
+            }) ; ;
+
+
+
+        }
+
 
 
         public void nacist_prijmy_a_vydje()
@@ -42,6 +70,11 @@ namespace EzivnostC
 
             this.Label_Vynos_prehled.Text = (prijmy - vydaje).ToString() + " Kč";
 
+
+        }
+
+        private void pieChart1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
 
         }
     }

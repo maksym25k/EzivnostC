@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.Json;
+
 using System.IO;
 using System.Windows.Forms;
 using Newtonsoft.Json;
@@ -26,7 +26,7 @@ namespace EzivnostC
                 {"login",login},
                 {"Password",password}
             };
-            var json = System.Text.Json.JsonSerializer.Serialize(dict);
+            var json = JsonConvert.SerializeObject(dict);
             MessageBox.Show(json.ToString() );
             
             File.WriteAllText(@"dbconf.json", json);
