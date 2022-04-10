@@ -85,9 +85,9 @@ namespace EzivnostC
             // 
             // Menu_pan
             // 
+            this.Menu_pan.Controls.Add(this.FormularProUlozeniFaktury);
             this.Menu_pan.Controls.Add(this.tableProfil);
             this.Menu_pan.Controls.Add(this.MenuTablePanel);
-            this.Menu_pan.Controls.Add(this.FormularProUlozeniFaktury);
             this.Menu_pan.Location = new System.Drawing.Point(1, 7);
             this.Menu_pan.Name = "Menu_pan";
             this.Menu_pan.Size = new System.Drawing.Size(1014, 646);
@@ -141,7 +141,7 @@ namespace EzivnostC
             this.dataprijmenilabel.ForeColor = System.Drawing.Color.White;
             this.dataprijmenilabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataprijmenilabel.Location = new System.Drawing.Point(266, 41);
-            this.dataprijmenilabel.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.dataprijmenilabel.Margin = new System.Windows.Forms.Padding(9);
             this.dataprijmenilabel.Name = "dataprijmenilabel";
             this.dataprijmenilabel.Size = new System.Drawing.Size(60, 23);
             this.dataprijmenilabel.TabIndex = 4;
@@ -154,7 +154,7 @@ namespace EzivnostC
             this.datajmenolabel.ForeColor = System.Drawing.Color.White;
             this.datajmenolabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.datajmenolabel.Location = new System.Drawing.Point(12, 41);
-            this.datajmenolabel.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.datajmenolabel.Margin = new System.Windows.Forms.Padding(9);
             this.datajmenolabel.Name = "datajmenolabel";
             this.datajmenolabel.Size = new System.Drawing.Size(60, 23);
             this.datajmenolabel.TabIndex = 3;
@@ -216,7 +216,7 @@ namespace EzivnostC
             this.labelEmailProfil.ForeColor = System.Drawing.Color.White;
             this.labelEmailProfil.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelEmailProfil.Location = new System.Drawing.Point(12, 142);
-            this.labelEmailProfil.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.labelEmailProfil.Margin = new System.Windows.Forms.Padding(9);
             this.labelEmailProfil.Name = "labelEmailProfil";
             this.labelEmailProfil.Size = new System.Drawing.Size(70, 23);
             this.labelEmailProfil.TabIndex = 23;
@@ -475,6 +475,7 @@ namespace EzivnostC
             this.button1.TabIndex = 2;
             this.button1.Text = "Přídat typ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -558,6 +559,7 @@ namespace EzivnostC
             this.radioButtonVydaj.TabStop = true;
             this.radioButtonVydaj.Text = "Výdaj";
             this.radioButtonVydaj.UseVisualStyleBackColor = true;
+            this.radioButtonVydaj.CheckedChanged += new System.EventHandler(this.radioButtonVydaj_CheckedChanged);
             // 
             // radioButtonPrijem
             // 
@@ -569,6 +571,7 @@ namespace EzivnostC
             this.radioButtonPrijem.TabStop = true;
             this.radioButtonPrijem.Text = "Příjem";
             this.radioButtonPrijem.UseVisualStyleBackColor = true;
+            this.radioButtonPrijem.CheckedChanged += new System.EventHandler(this.radioButtonPrijem_CheckedChanged);
             // 
             // button2
             // 

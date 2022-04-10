@@ -14,7 +14,7 @@ namespace EzivnostC
    
     public class User
     {
-        private string connstring;
+       
 
 
 

@@ -19,6 +19,7 @@ namespace EzivnostC
             InitializeComponent();
             this.user = u;
             SetProfileLabels();
+           
             
         }
 
@@ -33,6 +34,36 @@ namespace EzivnostC
            
             dataprumernyvydelek.Text = "coming soon...";
             
+
+        }
+
+        public void set_combo_box(bool typ)
+            
+        {
+            comboBoxTyp.Items.Clear();
+            var listP = TypController.nacistTypyPrijmu();
+            var listV = TypController.nacistTypyVydaju();
+
+            if (typ&& listP.Count>0)
+            {
+                foreach (string x in listP)
+                {
+                    comboBoxTyp.Items.Add(x);
+
+                }
+            }
+            else
+            { if (listV.Count > 0)
+                {
+                    foreach (string x in listV)
+                    {
+                        comboBoxTyp.Items.Add(x);
+
+                    }
+                }
+
+            }
+
 
         }
 
@@ -121,6 +152,32 @@ namespace EzivnostC
         private void PrehledyPanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PridaniTypu pt = new PridaniTypu(); 
+            pt.ShowDialog();
+            if (radioButtonPrijem.Checked)
+            {
+                set_combo_box(true);
+            }
+            else
+            {
+                set_combo_box(false);
+            }
+            
+            
+        }
+
+        private void radioButtonPrijem_CheckedChanged(object sender, EventArgs e)
+        {
+            set_combo_box(true);
+        }
+
+        private void radioButtonVydaj_CheckedChanged(object sender, EventArgs e)
+        {
+            set_combo_box(false);
         }
     }
 }
