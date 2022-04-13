@@ -32,10 +32,19 @@ namespace EzivnostC
             InitializeComponent();
             nacist_prijmy_a_vydje();
             this.PieChartPrijmy.Series.Clear();
-            
-            
+            Nacist_Vydaje_chart();
+               
             PieChartPrijmy.Series = seriesViews;
             
+
+
+
+        }
+
+
+        public void Nacist_Prijmy()
+        {
+
 
 
 
@@ -57,6 +66,27 @@ namespace EzivnostC
 
         }
 
+        public void Nacist_Vydaje_chart()
+        {   this.seriesViews.Clear() ;
+            DateTime dt =  DateTime.Now;
+            foreach(string x in TypController.nacistTypyVydaju())
+            {
+                PieChartPrijmy_add(p.get_report_by_type_Vydej(x,mesic, rok, false), x);
+
+
+
+                
+
+
+            }
+
+
+
+        }
+
+
+        
+
 
 
         public void nacist_prijmy_a_vydje()
@@ -74,6 +104,11 @@ namespace EzivnostC
         }
 
         private void pieChart1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
+
+        private void Vydaje_pie_chart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
         {
 
         }

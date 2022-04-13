@@ -85,6 +85,7 @@
             this.Vydaje_pie_chart.Size = new System.Drawing.Size(303, 238);
             this.Vydaje_pie_chart.TabIndex = 3;
             this.Vydaje_pie_chart.Text = "Přehledy podle kategorii";
+            this.Vydaje_pie_chart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.Vydaje_pie_chart_ChildChanged);
             // 
             // PieChartPrijmy
             // 
