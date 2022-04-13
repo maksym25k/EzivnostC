@@ -96,7 +96,7 @@ namespace EzivnostC
         {
             using( SqlConnection c = DatabaseHelper.createconnection())
             {
-                string query = "select sum(castka) soucet from faktury where prijem = 0 and typ =  @typ and id_user = @user and month(datum_splatnosti) =@mesic and year(datum_splatnosti) =@rok;";
+                string query = "select sum(castka) soucet from faktury where prijem = @prijem and typ =  @typ and id_user = @user and month(datum_splatnosti) =@mesic and year(datum_splatnosti) =@rok;";
 
 
 
@@ -104,7 +104,7 @@ namespace EzivnostC
                 using (SqlCommand cmd = new SqlCommand(query, c))
                 {
                     cmd.Parameters.Add("@typ", SqlDbType.NVarChar).Value= type;
-                  /*  cmd.Parameters.Add("@prijem", SqlDbType.Bit).Value = prijem;*/
+                   cmd.Parameters.Add("@prijem", SqlDbType.Bit).Value = prijem;
                     cmd.Parameters.Add("@user",SqlDbType.Int).Value = this.u.id;
                     cmd.Parameters.Add("@mesic", SqlDbType.Int).Value= mesic;
                     cmd.Parameters.Add("@rok",SqlDbType.Int).Value= rok;
@@ -131,6 +131,11 @@ namespace EzivnostC
 
 
             }
+
+
+
+
+        
 
 
 

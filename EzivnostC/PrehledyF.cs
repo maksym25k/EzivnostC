@@ -14,46 +14,74 @@ namespace EzivnostC
 {
     public partial class PrehledyF : Form
     {
-        SeriesCollection seriesViews = new SeriesCollection();
+        MonthChoice choice = new MonthChoice();
+        SeriesCollection seriesViewsVydaje = new SeriesCollection();
+        SeriesCollection seriesViewsPrijmy = new SeriesCollection();
 
-        public int rok { get; }
-        public int mesic { get; }
+        public int rok { get; set; }
+        public int mesic { get; set; }
 
         User user = new User();
         Prehledy p;
         public PrehledyF( User u)
         {   
             this.user = u;
-            p = new Prehledy(this.user);
-            MonthChoice choice = new MonthChoice();
+
+            
             choice.ShowDialog();
             this.rok = choice.rok;
             this.mesic = choice.mesic;
             InitializeComponent();
+            load();
+
+
+
+        }
+
+
+       
+
+        
+        public void load()
+        {
+            p = new Prehledy(this.user);
             nacist_prijmy_a_vydje();
-            this.PieChartPrijmy.Series.Clear();
             Nacist_Vydaje_chart();
-               
-            PieChartPrijmy.Series = seriesViews;
+            Nacist_Prijmy_chart();
+            PieChartPrijmy.Series = seriesViewsPrijmy;
+            Vydaje_pie_chart.Series = seriesViewsVydaje;    
             
 
-
-
         }
 
 
-        public void Nacist_Prijmy()
+        public void Nacist_Prijmy_chart()
+            
         {
+            this.seriesViewsPrijmy.Clear();
+            
+            foreach (string x in TypController.nacistTypyPrijmu())
+            {
+                decimal temp = p.get_report_by_type_Vydej(x, mesic, rok, true);
+                if (temp <= 0)
+                {
+                    continue;
+
+                }
+                else
+                {
+                    PieChartPrijmy_add(temp, x);
+                }
 
 
 
 
+            }
         }
-
 
         public void PieChartPrijmy_add(decimal castka, string typ)
         {
-            seriesViews.Add(new PieSeries
+            seriesViewsPrijmy.Add(new PieSeries
             {
                 Title = typ,
                 Values = new ChartValues<decimal> { castka },
@@ -64,19 +92,40 @@ namespace EzivnostC
 
 
 
+
+        }
+        public void PieChartVydaje_add(decimal castka, string typ)
+        {
+            seriesViewsVydaje.Add(new PieSeries
+            {
+                Title = typ,
+                Values = new ChartValues<decimal> { castka },
+                DataLabels = true
+
+
+            }); ;
         }
 
-        public void Nacist_Vydaje_chart()
-        {   this.seriesViews.Clear() ;
+
+            public void Nacist_Vydaje_chart()
+        {   this.seriesViewsVydaje.Clear() ;
             DateTime dt =  DateTime.Now;
             foreach(string x in TypController.nacistTypyVydaju())
             {
-                PieChartPrijmy_add(p.get_report_by_type_Vydej(x,mesic, rok, false), x);
+
+                decimal temp = p.get_report_by_type_Vydej(x, mesic, rok, false);
+                if (temp <= 0)
+                {
+                    continue;
+
+                }
+                else
+                {
+                    PieChartVydaje_add(temp, x);
+                }
 
 
-
-                
-
+          
 
             }
 
@@ -103,14 +152,14 @@ namespace EzivnostC
 
         }
 
-        private void pieChart1_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+ 
+
+        private void Zmenit_mesic_p_button_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Vydaje_pie_chart_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
-        {
-
+            choice.ShowDialog();
+            this.rok = choice.rok;
+            this.mesic = choice.mesic;
+            this.load();
         }
     }
 }

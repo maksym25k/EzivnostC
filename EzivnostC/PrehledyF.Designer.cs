@@ -30,6 +30,8 @@
         {
             this.tabPrehledy = new System.Windows.Forms.TabControl();
             this.MesicniPrehledyTab = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Vydaje_pie_chart = new LiveCharts.WinForms.PieChart();
             this.PieChartPrijmy = new LiveCharts.WinForms.PieChart();
             this.Zmenit_mesic_p_button = new System.Windows.Forms.Button();
@@ -45,6 +47,7 @@
             this.PrijmyLabel = new System.Windows.Forms.Label();
             this.PrehledyPodleKategoriiTab = new System.Windows.Forms.TabPage();
             this.PrijmyKatTab = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPrehledy.SuspendLayout();
             this.MesicniPrehledyTab.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -67,6 +70,8 @@
             // MesicniPrehledyTab
             // 
             this.MesicniPrehledyTab.BackColor = System.Drawing.Color.White;
+            this.MesicniPrehledyTab.Controls.Add(this.label3);
+            this.MesicniPrehledyTab.Controls.Add(this.label1);
             this.MesicniPrehledyTab.Controls.Add(this.Vydaje_pie_chart);
             this.MesicniPrehledyTab.Controls.Add(this.PieChartPrijmy);
             this.MesicniPrehledyTab.Controls.Add(this.Zmenit_mesic_p_button);
@@ -78,33 +83,52 @@
             this.MesicniPrehledyTab.TabIndex = 0;
             this.MesicniPrehledyTab.Text = "Mesiční přehledy";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(724, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Výdaje:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(453, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Příjmy:";
+            // 
             // Vydaje_pie_chart
             // 
-            this.Vydaje_pie_chart.Location = new System.Drawing.Point(659, 266);
+            this.Vydaje_pie_chart.Location = new System.Drawing.Point(680, 43);
             this.Vydaje_pie_chart.Name = "Vydaje_pie_chart";
-            this.Vydaje_pie_chart.Size = new System.Drawing.Size(303, 238);
+            this.Vydaje_pie_chart.Size = new System.Drawing.Size(276, 260);
             this.Vydaje_pie_chart.TabIndex = 3;
             this.Vydaje_pie_chart.Text = "Přehledy podle kategorii";
-            this.Vydaje_pie_chart.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.Vydaje_pie_chart_ChildChanged);
+          
             // 
             // PieChartPrijmy
             // 
-            this.PieChartPrijmy.Location = new System.Drawing.Point(659, 3);
+            this.PieChartPrijmy.Location = new System.Drawing.Point(401, 43);
             this.PieChartPrijmy.Name = "PieChartPrijmy";
-            this.PieChartPrijmy.Size = new System.Drawing.Size(303, 248);
+            this.PieChartPrijmy.Size = new System.Drawing.Size(257, 266);
             this.PieChartPrijmy.TabIndex = 2;
             this.PieChartPrijmy.Text = "Přehledy podle kategorii";
-            this.PieChartPrijmy.ChildChanged += new System.EventHandler<System.Windows.Forms.Integration.ChildChangedEventArgs>(this.pieChart1_ChildChanged);
+           
             // 
             // Zmenit_mesic_p_button
             // 
             this.Zmenit_mesic_p_button.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.Zmenit_mesic_p_button.Location = new System.Drawing.Point(36, 297);
+            this.Zmenit_mesic_p_button.Location = new System.Drawing.Point(401, 399);
             this.Zmenit_mesic_p_button.Name = "Zmenit_mesic_p_button";
             this.Zmenit_mesic_p_button.Size = new System.Drawing.Size(141, 33);
             this.Zmenit_mesic_p_button.TabIndex = 1;
             this.Zmenit_mesic_p_button.Text = "Zvolit jiný měsíc";
             this.Zmenit_mesic_p_button.UseVisualStyleBackColor = true;
+            this.Zmenit_mesic_p_button.Click += new System.EventHandler(this.Zmenit_mesic_p_button_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -233,16 +257,28 @@
             this.PrijmyKatTab.Text = "Příjmy podle typu";
             this.PrijmyKatTab.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(17, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Přehledy:";
+            // 
             // PrehledyF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 597);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tabPrehledy);
             this.Name = "PrehledyF";
             this.Text = " ";
             this.tabPrehledy.ResumeLayout(false);
             this.MesicniPrehledyTab.ResumeLayout(false);
+            this.MesicniPrehledyTab.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -251,6 +287,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -273,5 +310,8 @@
         private System.Windows.Forms.Button Zmenit_mesic_p_button;
         private LiveCharts.WinForms.PieChart PieChartPrijmy;
         private LiveCharts.WinForms.PieChart Vydaje_pie_chart;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
