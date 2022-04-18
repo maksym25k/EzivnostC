@@ -15,7 +15,7 @@ namespace EzivnostC
 
     {
 
-        User u = null;
+        User u ;
 
         public StahovaniFaktur(User u)
         {
@@ -23,15 +23,15 @@ namespace EzivnostC
 
 
         } 
-        public byte[] NacistFakturu(string datum_splatnosti)
+        public byte[] NacistFakturu(int id)
         {
             SqlConnection c = DatabaseHelper.createconnection();
 
-            string query = "select pdf from faktury where datum_splatnosti = @dat_sp";
+            string query = "select pdf from faktury where id_pdf = @dat_sp";
             byte[] pdf = null;
             using (SqlCommand command = new SqlCommand(query, c))
             {
-                command.Parameters.Add("@dat_sp", SqlDbType.Date).Value = datum_splatnosti;
+                command.Parameters.Add("@dat_sp", SqlDbType.Int).Value = id;
                 c.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
@@ -47,11 +47,12 @@ namespace EzivnostC
         }
 
 
-        public void stahnout_fakturu(string datum, string cesta)
+        public void stahnout_fakturu(int id, string cesta)
         {
-            FileStream fStream = new FileStream(cesta + "soubor1", FileMode.Create, FileAccess.Write);
-            byte[] contents = NacistFakturu(datum);
+            FileStream fStream = new FileStream(cesta , FileMode.Create, FileAccess.Write);
+            byte[] contents = NacistFakturu(id);
             fStream.Write(contents, 0, (int)contents.Length);
+            fStream.Close();
 
         }
     }

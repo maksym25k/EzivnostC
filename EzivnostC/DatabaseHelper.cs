@@ -55,10 +55,10 @@ namespace EzivnostC
 
         public  static string createConnString()
         {
-         /*   var a =deserialize();
+          var a =deserialize();
             string ConnString = @"Server ="+a["servername"]+"; Database = "+a["database name"]+ ";User Id =" + a["login"]+";Password ="+a["Password"];
-            /* return ConnString;*/
-            return "Data Source = 193.85.203.188;  Initial Catalog = kvetsko; User ID = kvetsko; Password = kvetsko25";
+            return ConnString;
+            
 
 
 

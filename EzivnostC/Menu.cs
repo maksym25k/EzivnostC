@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EzivnostC
@@ -16,10 +9,13 @@ namespace EzivnostC
         public Menu( User u)
         {
             
+            
             InitializeComponent();
             this.user = u;
             SetProfileLabels();
-           
+            Prehledy p = new Prehledy(user);
+
+            dataprumernyvydelek.Text = (p.monthReportPrijmy(DateTime.Now.Year, DateTime.Now.Month) - p.monthReportVydaje(DateTime.Now.Year, DateTime.Now.Month)).ToString(); 
             
         }
 
@@ -41,8 +37,8 @@ namespace EzivnostC
             
         {
             comboBoxTyp.Items.Clear();
-            var listP = TypController.nacistTypyPrijmu();
-            var listV = TypController.nacistTypyVydaju();
+            var listP = TypController.nacistTypyPrijmu(this.user);
+            var listV = TypController.nacistTypyVydaju(this.user);
 
             if (typ&& listP.Count>0)
             {
@@ -79,7 +75,7 @@ namespace EzivnostC
                     f.Ulozit_do_db(this.user);
                     MessageBox.Show("Faktura byla uložená");
                 }
-                catch (Exception ex)
+                catch 
                 { 
                     MessageBox.Show("Spatné vstupní údaje");
 
@@ -134,9 +130,9 @@ namespace EzivnostC
         private void PrehledyButton_Click(object sender, EventArgs e)
         {
            PrehledyF prehledy = new PrehledyF(user);
-           prehledy.Show();
+           prehledy.ShowDialog();
            
-        }
+         }
 
         private void Ulozeni_faktur_panel_Paint(object sender, PaintEventArgs e)
         {
@@ -181,6 +177,23 @@ namespace EzivnostC
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Stahovani_faktur sf = new Stahovani_faktur(this.user);
+            sf.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Nastavení n = new Nastavení(user);
+            n.ShowDialog();
+        }
+
+        private void Datum_Splatnosti_Textbox_TextChanged(object sender, EventArgs e)
         {
 
         }

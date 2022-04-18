@@ -57,50 +57,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.infolabel = new System.Windows.Forms.Label();
             this.infot = new System.Windows.Forms.TableLayoutPanel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxTelCislo = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxZalohaZdr = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxZaloha_soc = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBoxDIČ = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxIČO = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TextBoxDatNar = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.TextBoxPrijmeni = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.TextBoxAdresa = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Hlavnicinnostcheck = new System.Windows.Forms.CheckBox();
-            this.labelHLC = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.TextBoxJmeno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.loginp.SuspendLayout();
             this.signupp.SuspendLayout();
             this.infot.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,6 +122,8 @@
             this.loginp.BackColor = System.Drawing.Color.DarkBlue;
             this.loginp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.loginp.CausesValidation = false;
+            this.loginp.Controls.Add(this.label10);
+            this.loginp.Controls.Add(this.label9);
             this.loginp.Controls.Add(this.button4);
             this.loginp.Controls.Add(this.TextBoxHesloP);
             this.loginp.Controls.Add(this.TextBoxEmailP);
@@ -199,6 +174,9 @@
             this.signupp.BackColor = System.Drawing.Color.DarkBlue;
             this.signupp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.signupp.CausesValidation = false;
+            this.signupp.Controls.Add(this.label8);
+            this.signupp.Controls.Add(this.label7);
+            this.signupp.Controls.Add(this.label6);
             this.signupp.Controls.Add(this.button3);
             this.signupp.Controls.Add(this.PHesloRegistrace);
             this.signupp.Controls.Add(this.hesloRegistrace);
@@ -259,128 +237,12 @@
             // 
             resources.ApplyResources(this.infot, "infot");
             this.infot.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.infot.Controls.Add(this.panel11, 1, 4);
-            this.infot.Controls.Add(this.panel10, 1, 3);
-            this.infot.Controls.Add(this.panel9, 0, 3);
-            this.infot.Controls.Add(this.panel8, 1, 2);
-            this.infot.Controls.Add(this.panel7, 0, 2);
-            this.infot.Controls.Add(this.panel6, 1, 1);
             this.infot.Controls.Add(this.panel5, 1, 0);
-            this.infot.Controls.Add(this.panel4, 0, 1);
-            this.infot.Controls.Add(this.panel2, 0, 4);
             this.infot.Controls.Add(this.panel3, 0, 0);
-            this.infot.Controls.Add(this.button1, 1, 5);
+            this.infot.Controls.Add(this.button1, 1, 1);
             this.infot.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.infot.Name = "infot";
             this.infot.Tag = "infot";
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.label12);
-            this.panel11.Controls.Add(this.textBoxTelCislo);
-            resources.ApplyResources(this.panel11, "panel11");
-            this.panel11.Name = "panel11";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Name = "label12";
-            // 
-            // textBoxTelCislo
-            // 
-            resources.ApplyResources(this.textBoxTelCislo, "textBoxTelCislo");
-            this.textBoxTelCislo.Name = "textBoxTelCislo";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Controls.Add(this.textBoxZalohaZdr);
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Name = "label11";
-            // 
-            // textBoxZalohaZdr
-            // 
-            resources.ApplyResources(this.textBoxZalohaZdr, "textBoxZalohaZdr");
-            this.textBoxZalohaZdr.Name = "textBoxZalohaZdr";
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.textBoxZaloha_soc);
-            resources.ApplyResources(this.panel9, "panel9");
-            this.panel9.Name = "panel9";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Name = "label10";
-            // 
-            // textBoxZaloha_soc
-            // 
-            resources.ApplyResources(this.textBoxZaloha_soc, "textBoxZaloha_soc");
-            this.textBoxZaloha_soc.Name = "textBoxZaloha_soc";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.textBoxDIČ);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Name = "label9";
-            // 
-            // textBoxDIČ
-            // 
-            resources.ApplyResources(this.textBoxDIČ, "textBoxDIČ");
-            this.textBoxDIČ.Name = "textBoxDIČ";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.textBoxIČO);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Name = "label8";
-            // 
-            // textBoxIČO
-            // 
-            resources.ApplyResources(this.textBoxIČO, "textBoxIČO");
-            this.textBoxIČO.Name = "textBoxIČO";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.TextBoxDatNar);
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Name = "label7";
-            // 
-            // TextBoxDatNar
-            // 
-            resources.ApplyResources(this.TextBoxDatNar, "TextBoxDatNar");
-            this.TextBoxDatNar.Name = "TextBoxDatNar";
             // 
             // panel5
             // 
@@ -399,46 +261,6 @@
             // 
             resources.ApplyResources(this.TextBoxPrijmeni, "TextBoxPrijmeni");
             this.TextBoxPrijmeni.Name = "TextBoxPrijmeni";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.TextBoxAdresa);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Name = "label6";
-            // 
-            // TextBoxAdresa
-            // 
-            resources.ApplyResources(this.TextBoxAdresa, "TextBoxAdresa");
-            this.TextBoxAdresa.Name = "TextBoxAdresa";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Hlavnicinnostcheck);
-            this.panel2.Controls.Add(this.labelHLC);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // Hlavnicinnostcheck
-            // 
-            resources.ApplyResources(this.Hlavnicinnostcheck, "Hlavnicinnostcheck");
-            this.Hlavnicinnostcheck.Checked = true;
-            this.Hlavnicinnostcheck.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.Hlavnicinnostcheck.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Hlavnicinnostcheck.Name = "Hlavnicinnostcheck";
-            this.Hlavnicinnostcheck.UseVisualStyleBackColor = false;
-            // 
-            // labelHLC
-            // 
-            resources.ApplyResources(this.labelHLC, "labelHLC");
-            this.labelHLC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelHLC.Name = "labelHLC";
             // 
             // panel3
             // 
@@ -465,13 +287,43 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Ulozit_Click);
             // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Name = "label9";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Name = "label10";
+            // 
             // Welcome
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.infot);
-            this.Controls.Add(this.signupp);
             this.Controls.Add(this.infolabel);
+            this.Controls.Add(this.signupp);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.loginp);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -484,24 +336,8 @@
             this.signupp.ResumeLayout(false);
             this.signupp.PerformLayout();
             this.infot.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -530,36 +366,17 @@
         private Button button4;
         private Label infolabel;
         private TableLayoutPanel infot;
-        private TextBox TextBoxAdresa;
         private TextBox TextBoxJmeno;
         private Button button1;
-        private Panel panel2;
-        private CheckBox Hlavnicinnostcheck;
-        private Label labelHLC;
-        private Panel panel4;
         private Panel panel3;
-        private Panel panel11;
-        private TextBox textBoxTelCislo;
-        private Panel panel10;
-        private TextBox textBoxZalohaZdr;
-        private Panel panel9;
-        private TextBox textBoxZaloha_soc;
-        private Panel panel8;
-        private TextBox textBoxDIČ;
-        private Panel panel7;
-        private TextBox textBoxIČO;
-        private Panel panel6;
-        private TextBox TextBoxDatNar;
         private Panel panel5;
         private TextBox TextBoxPrijmeni;
-        private Label label11;
+        private Label label5;
+        private Label label4;
         private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
-        private Label label5;
         private Label label6;
-        private Label label4;
-        private Label label12;
     }
 }

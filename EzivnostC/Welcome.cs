@@ -1,6 +1,5 @@
 
 using System;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace EzivnostC
@@ -8,10 +7,14 @@ namespace EzivnostC
     public partial class Welcome : Form
     {
         User u = new User();
+        Menu m;
 
         public Welcome()
         {
             InitializeComponent();
+            hesloRegistrace.PasswordChar = '*';
+            PHesloRegistrace.PasswordChar = '*';
+            TextBoxHesloP.PasswordChar = '*';
         }
         FlowLayoutPanel lp = new FlowLayoutPanel();
 
@@ -62,7 +65,7 @@ namespace EzivnostC
             {
                 this.u.Prihlaseni(this.email, this.heslo);
             }
-            catch (Exception ex)
+            catch 
             {
                 MessageBox.Show("špatnì zadané údaje");
                 return;
@@ -74,18 +77,13 @@ namespace EzivnostC
 
         private void Ulozit_Click(object sender, EventArgs e)
         {
-            string ico = textBoxIÈO.Text;
-            string dic = textBoxDIÈ.Text;
+         
             string jmeno = TextBoxJmeno.Text;
             string prijmeni = TextBoxPrijmeni.Text;
-            string zalohasoc = textBoxZaloha_soc.Text;
-            string zalohazdr = textBoxZalohaZdr.Text;
-            bool hlC = Hlavnicinnostcheck.Checked;
-            string dat_nar = TextBoxDatNar.Text;
-            string adresa = TextBoxAdresa.Text;
+       
             try
             {
-                u = new User(jmeno, prijmeni, u.Email, textBoxTelCislo.Text, dat_nar, hlC, float.Parse(zalohazdr), float.Parse(zalohasoc), int.Parse(ico), dic, hesloRegistrace.Text, TextBoxAdresa.Text);
+                u = new User(jmeno, prijmeni, u.Email,heslo);
 
             }
             catch (Exception)
@@ -112,7 +110,7 @@ namespace EzivnostC
 
         public void start_menu()
         {
-            Menu m = new Menu(this.u);
+             m = new Menu(this.u);
             this.Hide();
             m.Show();
         }
@@ -131,4 +129,6 @@ namespace EzivnostC
 
           }*/
     }
+
+   
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Windows.Forms;
 
@@ -79,7 +75,7 @@ namespace EzivnostC
                 {
                     command.ExecuteNonQuery();
                 }
-                catch (Exception ex)
+                catch 
                 {
                     MessageBox.Show("Ulozeni do databáze se nepovedlo");
                     return;

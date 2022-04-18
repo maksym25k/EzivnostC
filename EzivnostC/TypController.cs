@@ -1,33 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows;
 
 namespace EzivnostC
 {
     public static class TypController
-    {   
+    {
 
         public static List<string> typyV = new List<string>();
         public static List<string> typyP = new List<string>();
         public static void serializeVydaje(string typ)
         {
-           
-            
-            
+
+
+
             try
             {
-                deserializeVydaje();
-                if (typyV.Contains(typ))
-                {
-                    MessageBox.Show("Tento typ jiz existuje");
-                    return;
 
-                }
+
                 System.IO.StreamWriter file = new System.IO.StreamWriter(@"souborstypyVydaj.txt", append: true);
                 file.WriteLine(typ);
                 file.Close();
             }
-            catch (Exception ex)
+            catch 
             {
                 return;
             }
@@ -39,21 +35,17 @@ namespace EzivnostC
         {
 
 
-           
+
             try
             {
 
-                bool equal = false;
 
 
-                typyP = nacistTypyPrijmu();
-                if (typyP.Equals(null))
-                {
-                   
-                }
 
 
-                foreach(string x in typyP)
+
+
+                foreach (string x in typyP)
                 {
                     if (x == typ)
                     {
@@ -61,18 +53,18 @@ namespace EzivnostC
                     }
                     else
                     {
-                        
-                       
-                        
+
+
+
                     }
 
 
                 }
-                
 
 
 
-                System.IO.StreamWriter file = new System.IO.StreamWriter(@"souborstypyPrijem.txt",append:true);
+
+                System.IO.StreamWriter file = new System.IO.StreamWriter(@"souborstypyPrijem.txt", append: true);
 
                 file.WriteLine(typ);
                 file.Close();
@@ -87,61 +79,65 @@ namespace EzivnostC
         }
 
 
-        public static List<string> nacistTypyVydaju()
-        {   
-            deserializeVydaje();
+        public static List<string> nacistTypyVydaju(User u)
+        {
+            deserializeVydaje(u);
             return typyV;
 
         }
-        public static List<string> nacistTypyPrijmu()
+        public static List<string> nacistTypyPrijmu(User u)
         {
-            deserializePrijmy();
+            deserializePrijmy(u);
             return typyP;
 
         }
 
 
-        public static void deserializeVydaje()
+        public static void deserializeVydaje(User u)
         {
-            System.IO.StreamReader reader = new System.IO.StreamReader(@"souborstypyVydaj.txt");
             typyV.Clear();
-            do
+            SqlConnection conn = DatabaseHelper.createconnection();
+            string query = "select distinct typ from faktury where id_user = " + u.id + " and prijem = 0";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader r = cmd.ExecuteReader();
+            while (r.Read())
             {
-                
-                typyV.Add(reader.ReadLine());
-                
+                typyV.Add(r.GetString(0));
+
 
             }
-            while(!reader.EndOfStream);
 
-            reader.Close();
 
+            r.Close();
+            conn.Close();
         }
-        public static void deserializePrijmy()
+        public static void deserializePrijmy(User u)
         {
-            System.IO.StreamReader reader = new System.IO.StreamReader(@"souborstypyPrijem.txt");
-            typyP.Clear();
-            do
             {
-                
-                
-                    
-                    typyP.Add(reader.ReadLine());
-                
-                
+                typyP.Clear();
+                SqlConnection conn = DatabaseHelper.createconnection();
+                string query = "select distinct typ from faktury where id_user = " + u.id + " and prijem = 1";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                SqlDataReader r = cmd.ExecuteReader();
+                while (r.Read())
+                {
+                    typyP.Add(r.GetString(0));
 
 
+                }
+
+
+                r.Close();
+                conn.Close();
             }
-            while (!reader.EndOfStream);
-            reader.Close();
+
+
+
+
 
 
         }
-
-
-
-
-
-
     }
 }

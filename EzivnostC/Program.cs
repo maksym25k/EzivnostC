@@ -17,6 +17,7 @@ namespace EzivnostC
         [STAThread]
         static void Main()
         {
+            
 
             try
             {
@@ -30,7 +31,7 @@ namespace EzivnostC
             Welcome welcome = new Welcome();
             
             Application.Run(welcome);
-            
+              
             
         }
     }
