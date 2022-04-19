@@ -71,6 +71,31 @@ namespace EzivnostC
                 Cursor = Cursors.WaitCursor;
                 try
                 {
+                    if (Datum_Splatnosti_Textbox.Text.Trim().Length== 0)
+                    {
+                        string m = DateTime.Now.Month.ToString();
+                        string d= DateTime.Now.Day.ToString();
+                        if (m.Length == 1)
+                        {
+                            m = "0" + m;
+                        }
+                        if (d.Length == 1)
+                        {
+                            d = "0" + d;
+                        }
+
+                        this.Datum_Splatnosti_Textbox.Text = DateTime.Now.Year.ToString() + "-" + m +"-"+ d;    
+
+
+                    }
+                    if (pathToFile == "")
+                    {
+                        pathToFile = @"blank.pdf";
+                    }
+                    if (textBoxEv_cislo.Text.Length== 0)
+                    {
+                        textBoxEv_cislo.Text = "0";
+                    }
                     FakturaVystavena f = new FakturaVystavena(this.pathToFile, int.Parse(textBoxCastka_Faktura.Text), radioButtonPrijem.Checked, textBoxPoznamka.Text, comboBoxTyp.Text, int.Parse(textBoxEv_cislo.Text),Datum_Splatnosti_Textbox.Text);
                     f.Ulozit_do_db(this.user);
                     MessageBox.Show("Faktura byla uložená");

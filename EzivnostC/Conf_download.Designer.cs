@@ -77,7 +77,7 @@
             this.Controls.Add(this.yes);
             this.Controls.Add(this.label1);
             this.Name = "Conf_download";
-            this.Text = "Conf_download";
+            this.Text = "Okno výběru";
             this.ResumeLayout(false);
             this.PerformLayout();
 

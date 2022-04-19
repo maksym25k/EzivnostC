@@ -17,8 +17,9 @@ namespace EzivnostC
         public Stahovani_faktur( User u)
         {
             InitializeComponent();
-            nacist_faktury();
             this.user = u;
+            nacist_faktury();
+            
             
         }
 
@@ -26,18 +27,19 @@ namespace EzivnostC
   when prijem = 0 then 'výdaj' 
   else 'Nezarazeno'
   end
-  as ' ', castka as 'Částka', typ as 'Typ', poznamka as Poznámka from faktury 
+  as ' ', castka as 'Částka', typ as 'Typ', poznamka as Poznámka from faktury where id_user = @user
   order by datum_splatnosti
   ;";
 
         public void nacist_faktury()
         {
-           
-                
-                using (SqlConnection con = DatabaseHelper.createconnection())
-                
-                    using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
-                    {
+
+
+            using (SqlConnection con = DatabaseHelper.createconnection())
+
+            using (SqlCommand cmd = new SqlCommand(sqlQuery, con))
+            {
+                cmd.Parameters.Add("@user", SqlDbType.Int).Value = user.id;
                         cmd.CommandType = CommandType.Text;
                         using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                         {
@@ -50,10 +52,7 @@ namespace EzivnostC
                     }
                 }
 
-        private void Zobrazení_faktur_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+      
 
         private void Zobrazení_faktur_SelectionChanged(object sender, EventArgs e)
         {
@@ -93,6 +92,8 @@ namespace EzivnostC
             cd.ShowDialog();
             nacist_faktury();
         }
+
+       
     }
     }
 

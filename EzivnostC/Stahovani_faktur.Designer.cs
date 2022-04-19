@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Zobrazení_faktur = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Zobrazení_faktur)).BeginInit();
@@ -37,13 +38,22 @@
             // 
             this.Zobrazení_faktur.AllowUserToAddRows = false;
             this.Zobrazení_faktur.AllowUserToDeleteRows = false;
+            this.Zobrazení_faktur.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Zobrazení_faktur.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Zobrazení_faktur.DefaultCellStyle = dataGridViewCellStyle1;
             this.Zobrazení_faktur.Location = new System.Drawing.Point(12, 103);
             this.Zobrazení_faktur.Name = "Zobrazení_faktur";
             this.Zobrazení_faktur.Size = new System.Drawing.Size(776, 335);
             this.Zobrazení_faktur.TabIndex = 0;
             this.Zobrazení_faktur.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Zobrazení_faktur_CellClick_1);
-            this.Zobrazení_faktur.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Zobrazení_faktur_CellClick);
             this.Zobrazení_faktur.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Zobrazení_faktur_CellContentDoubleClick);
             this.Zobrazení_faktur.SelectionChanged += new System.EventHandler(this.Zobrazení_faktur_SelectionChanged);
             // 
@@ -65,7 +75,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Zobrazení_faktur);
             this.Name = "Stahovani_faktur";
-            this.Text = "Stahovani_faktur";
+            this.Text = "Správa faktur";
             ((System.ComponentModel.ISupportInitialize)(this.Zobrazení_faktur)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
